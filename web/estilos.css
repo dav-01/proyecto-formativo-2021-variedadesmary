@@ -1,6 +1,8 @@
-body{
-    background-color: seagreen;
+.container{
+    border: solid 1px #ff0000;
+    
 }
+
 h1{
     color: red;
 }

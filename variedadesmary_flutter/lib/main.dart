@@ -26,7 +26,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text("VARIEDADES MARY"),
       ),
-      body: Text("VARIEDADES MARY"),
+      body: Text("VARIEDADES MARY..."),
     );
   }
 }
