@@ -1,6 +1,11 @@
 .container{
     border: solid 1px #ff0000;
-    
+}
+header{
+    border: solid red;
+}
+section{
+    border: solid blue;
 }
 
 h1{
