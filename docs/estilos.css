@@ -3,13 +3,8 @@
   padding: 0px;
 }
 body {
-  background-color: lightblue;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  background-image: url('https://img.freepik.com/vector-gratis/gotitas-agua-sobre-fondo-azul_107791-2583.jpg?size=626&ext=jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: lightblue;
 }
 .menu{
   background-color: red;
@@ -21,7 +16,7 @@ body {
   border-bottom: 1px solid #fff;
   box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
 }
-.titulo{
+.logo{
   color: #fff;
   font-size: 30px;
   padding: 0 40px;
@@ -62,7 +57,7 @@ ul.show{
 }
 
 @media screen and (max-width: 1200px){
-  .titulo{
+  .logos{
     font-size: 26px;
   }
   .lista li a{
@@ -72,7 +67,7 @@ ul.show{
 }
 
 @media screen and (max-width: 995px){
-  .titulo{
+  .logo{
     font-size: 20px;
     padding-right: 5px;
   }
@@ -113,7 +108,7 @@ ul.show{
   .lista li a:hover{
     color: #e9183b;
   }
-  .titulo{
+  .logo{
     font-size: 25px;
     padding-left: 35px;
   }
@@ -129,8 +124,26 @@ ul.show{
   }
 }
 
+
+
 section{
-  height: 600px;
-
-
+  margin: 10px;
+  border: solid 1px;
+  padding: 10px;
+}
+.presentacion{
+  font-weight: bold;
+}
+.titulos{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+table{
+  border: solid 1px yellow;
+  width: 100%;
+  text-align: center;
+}
+td{
+  border: solid 1px;
 }
