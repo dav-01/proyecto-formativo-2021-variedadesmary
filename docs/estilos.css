@@ -1,6 +1,136 @@
-body{
-    background-color: aqua;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-h1{
-    color: red;
+body {
+  background-color: lightblue;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  background-image: url('https://img.freepik.com/vector-gratis/gotitas-agua-sobre-fondo-azul_107791-2583.jpg?size=626&ext=jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.menu{
+  background-color: red;
+  display: flex;
+  height: 75px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+}
+.titulo{
+  color: #fff;
+  font-size: 30px;
+  padding: 0 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.lista{
+  margin-top: 20px;
+  display: flex;
+  list-style: none;
+  margin-right: 3px;
+}
+.lista li{
+  border-radius: 3px;
+  margin: 0 5px;
+}
+.lista li a {
+  text-decoration: none;
+  padding: 0px 10px;
+  font-size: 17px;
+  display: block;
+  text-transform: uppercase;
+  color:#fff;
+}
+.lista li:hover, li.active{
+  background-color: rgba(0, 0, 0, .3);
+  transition: .4s;
+}
+.btn_menu{
+  margin-right: 30px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+ul.show{
+  top: 65px;
+}
+
+@media screen and (max-width: 1200px){
+  .titulo{
+    font-size: 26px;
+  }
+  .lista li a{
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 995px){
+  .titulo{
+    font-size: 20px;
+    padding-right: 5px;
+  }
+  .lista li a{
+    font-size: 11px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 830px){
+  .menu{
+    height: 65px;
+  }
+  .btn_menu{
+    display: inherit;
+  }
+  .lista{
+    position: fixed;
+    width: 100%;
+    height: calc(100% -65px);
+    background: #414141;
+    top: -100%;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column;
+  }
+  .lista li{
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+  .lista li:hover{
+    background: none;
+  }
+  .lista li a{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .lista li a:hover{
+    color: #e9183b;
+  }
+  .titulo{
+    font-size: 25px;
+    padding-left: 35px;
+  }
+
+}
+
+@media screen and (max-width: 830px) and (orientation: landscape){
+  .lista li{
+    margin: 5px 0 0 0;
+  }
+  .lista{
+    height: calc(100% -65px);
+  }
+}
+
+section{
+  height: 600px;
+
+
 }
