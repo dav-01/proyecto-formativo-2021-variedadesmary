@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
           children: <Widget>[],
         ),
       ),
-      body: Text('Variedades Mary'),
+      body: Text('Variedades Mary...'),
     );
   }
 }
