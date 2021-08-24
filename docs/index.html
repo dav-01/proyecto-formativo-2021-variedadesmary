@@ -20,10 +20,16 @@
     <ul class="lista">
       <li class="active"><a href="#">Srs</a></li>
       <li><a href="#">Base de datos</a></li>
+      <!-- Aqui va el enlace a la pagina donde estara
+                                                  el modelo entidad relacion-->
       <li><a href="#">Diagrama de clases</a></li>
-      <li><a href="">Casos de uso</a></li>
+      <!-- Aqui va el enlace a la pagina donde estara
+        el diagrama de clases-->
+      <li><a href="">Casos de uso</a></li> <!-- Aqui va el enlace a la pagina donde estaran los casos de uso-->
       <li><a href="#">Informe de analisis</a></li>
-      <li><a href="#">Metricas</a></li>
+      <!-- Aqui va el enlace a la pagina donde estara
+                                                  el informe de analisis-->
+      <li><a href="#">Metricas</a></li> <!-- Aqui va el enlace a la pagina donde estaran las metricas de calidad-->
     </ul>
     <span class="btn_menu">
       <i class="fa fa-bars"></i>
@@ -46,16 +52,16 @@
     </h4>
     <table>
       <tr>
-        <td>Fecha</td>
-        <td>Version</td>
-        <td>Descripcion</td>
-        <td>Autor</td>
+        <td><b>Fecha</b></td>
+        <td><b>Version</b></td>
+        <td><b>Descripcion</b></td>
+        <td><b>Autor</b></td>
       </tr>
       <tr>
         <td>29/07/2020</td>
         <td>1.0</td>
         <td>Inicialización del proyecto</td>
-        <td>
+        <td style="text-align: left; padding-left: 10px;">
           <li>David Cabrera</li>
           <li>José Diazgranados</li>
           <li>Leidy Quiroga</li>
@@ -80,7 +86,7 @@
     <ol>
       <li>
         <h5>
-          Introduccion
+          <b>Introduccion</b>
         </h5>
         <p>El presente documento tiene como objetivo brindar una descripción detallada de los requerimientos para el
           sistema
@@ -91,7 +97,7 @@
         <ol>
           <li>
             <h5>
-              Proposito
+              <b>Proposito</b>
             </h5>
             <p>
               El propósito de este documento es describir de manera formal el comportamiento del sistema para la
@@ -114,7 +120,7 @@
           </li>
           <li>
             <h5>
-              Alcance
+              <b>Alcance</b>
             </h5>
             <p>
               El alcance de este proyecto será el de crear una plataforma web para el comercio Variedades Mary para que
@@ -139,7 +145,7 @@
               <li>
                 La plataforma tendrá un módulo de registro de actividades y de registro de usuarios.
               </li>
-
+              <br>
             </ol>
             <p>
               El proyecto tendrá la duración de año y medio y al terminar el proyecto solo se hará entrega del software
@@ -147,7 +153,7 @@
             </p>
           </li>
           <li>
-            <h5>Definiciones, Acrónimos, y Abreviaturas</h5>
+            <h5><b>Definiciones, Acrónimos, y Abreviaturas</b></h5>
           </li>
           <ol>
             <li>
@@ -168,7 +174,7 @@
           </ol><br>
           <dl>
             <dt>
-              <h4>Definiciones</h4>
+              <h4><b>Definiciones</b></h4>
             </dt>
           </dl>
           <dl>
@@ -242,12 +248,7 @@
           </p>
           <li>
             <h5>
-              Referencias
-            </h5>
-          </li>
-          <li>
-            <h5>
-              Apreciación Global
+              <b>Apreciación Global</b>
             </h5>
             <p>
               Este documento está conformado por secciones que son el propósito, el alcance, y la última sección es
@@ -259,15 +260,940 @@
             </p>
           </li>
         </ol>
+      <li>
+        <h5>
+          <b>
+            Descripción General </b>
+        </h5>
+      </li>
+      <ol>
         <li>
-          <h5>
-            Descripción General 
-          </h5>
+          <b>Perspectivas del producto</b>
         </li>
+        <p>
+          Este software será de fácil acceso, será capaz de generar simplicidad del control y obtención de la
+          información la cual suministrada por los usuarios.
+          <br><br>
+          Logrando una multifuncionalidad y accesibilidad de acuerdo a las funciones del usuario. Se espera que el
+          sistema funcione en un ambiente web, por lo que deberá ser capaz de funcionar en cualquier plataforma con un
+          navegador web instalado, siempre y cuando disponga de conexión al servidor en que va a estar corriendo la
+          aplicación, ya sea por Internet o alguna red privada.
+          La información que se muestra va cambiando a medida que se va ingresando a cada uno de las opciones. Esta
+          interfaz cumple con los requisitos de interfaz amigable con el usuario y fácil de usar.
+          <br><br>
+          Al ser una aplicación web se espera que el consumo de recursos sea muy poco, por lo que se enfocaría
+          básicamente en lo que gasta el navegador que es alrededor de 64 MB.
+          <br><br>
+          El sistema WEB, permitirá su utilización de forma descentralizada, además trabajará de manera independiente
+          por lo tanto no interactuará con otros sistemas.
+          <br><br>
+          Lo que se espera de esta aplicación es que sea más usable y más intuitiva para sus usuarios, además de que
+          satisfaga completamente los requerimientos con el mejor uso de recursos posibles.
+        </p>
+        <li>
+          <b>Funciones del Producto</b>
+        </li>
+        <p>
+          El software debe cumplir con las siguientes funciones:
+        </p>
+        <ol>
+          <li>
+            Modulo usuario.
+          </li>
+          <li>
+            Modulo de navegación.
+          </li>
+          <li>
+            Modulo de productos
+          </li>
+          <li>
+            Modulo de venta.
+          </li>
+          <li>
+            Modulo de pago (Facturación).
+          </li>
+          <li>
+            Modulo de reportes.
+          </li>
+          <li>
+            Modulo de proveedores.
+          </li>
+          <li>
+            Modulo de pedidos.
+          </li>
+        </ol>
+        <br>
+        <li>
+          <b>Características de Usuario</b>
+        </li> <br>
+        <p>
+          El sistema cuenta con tres tipos de usuario final, los cuales cada uno de ellos puede representar un rol, que
+          incide forma directa o indirecta con la tienda ya sea como: Empleado, Cuerpo administrativo, cliente. <br><br>
+          Administrativo: Este rol de usuario en primera instancia es quien más interactúa con el sistema y también el
+          cual tiene más accesibilidad y ser el usuario a disposición de administrar la información de los usuarios y
+          clientes de acuerdo a los requerimientos u opciones definidas referente a la información de las ventas.
+          <br><br>
+          Empleado(vendedor): como el anterior este rol es igual de principal solo que con algunas limitaciones en la
+          accesibilidad a la información suministrada en el sistema únicamente es direccionado a encargarse a través del
+          interfaz vendedor de generar un registro de asignación de venta, y únicamente tendrá acceso a su información
+          personal e sus datos acerca de sus ventas asignadas.
+          <br><br>
+          El siguiente lo constituyen los clientes igual de importantes que los ya mencionados, quienes solo tendrán
+          acceso al módulo de venta donde puede hacer consultas o revisar detalles referentes a los productos y a su
+          información personal alojada en su perfil, y a la hora de la facturación también a la información referente a
+          su compra del producto que se encuentran en venta dentro del módulo de clientes.
+        </p>
+        <li>
+          <b>Restricciones</b>
+        </li> <br>
+        <ul>
+          <li>
+            Debe haber conexión a internet.
+          </li>
+          <li>
+            Uso de sesiones para limitar el acceso a usuarios no autorizados.
+          </li>
+          <li>
+            La sesión se cerrará luego de 10 minutos de inactividad.
+          </li>
+        </ul> <br>
+        <li>
+          <b>Atención y Dependencias</b>
+        </li> <br>
+        <p>
+          Para el completo funcionamiento de la plataforma tiene estas dependencias:
+        </p>
+        <ul>
+          <li>
+            Conexión a internet.
+          </li>
+          <li>
+            Base de datos que servirá para almacenar todas las ventas y registro de actividades.
+          </li>
+          <li>
+            Un servidor con su respectivo hosting.
+          </li>
+        </ul>
+      </ol>
+      </li> <br>
+      <li>
+        <h5><b>Requerimientos Especificos</b></h5>
+        <ol>
+          <li>
+            <b>Requerimientos Funcionales</b>
+          </li> <br>
+
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td colspan="2"><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td colspan="2">Inicio de sesión</td>
+              <td>26/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">Se requiere un modulo de inicio de sesión para el ingreso de los usuarios a la plataforma
+                a
+                través de cual se van autenticar con su usuario y contraseña, los cuales deberán estar registrados en el
+                sistema. </td>
+            </tr>
+            <tr style="background-color: darkgrey;">
+              <td><b>Entradas</b></td>
+              <td><b>Fuente</b></td>
+              <td><b>Salida</b></td>
+              <td><b>Destino</b></td>
+              <td><b>Restricciones</b></td>
+            </tr>
+            <tr>
+              <td>Usuario y contraseña</td>
+              <td>Login</td>
+              <td>Base de datos</td>
+              <td>Menú principal</td>
+              <td>El usuario debe estar registrado</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Proceso</b></td>
+              <td colspan="4">
+                <ol>
+                  <li style="text-align: left;">Ingresar usuario y contraseña</li>
+                  <li style="text-align: left;">Verificar</li>
+                  <li style="text-align: left;">Confirmar acceso</li>
+                </ol>
+              </td>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Efecto Colateral</b></td>
+              <td colspan="4">Que se anule el ingreso en caso de que el usuario o contraseña no sean correctos</td>
+            </tr>
+            </tr>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td colspan="2"><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td colspan="2">Módulo de Ventas</td>
+              <td>26/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">En este módulo se requiere que los usuarios puedan observar los productos , fotos y sus
+                precios en la plataforma e ir seleccionando y decidir agregarlos al modulo de pedidos
+              </td>
+            </tr>
+            <tr style="background-color: darkgrey;">
+              <td><b>Entradas</b></td>
+              <td><b>Fuente</b></td>
+              <td><b>Salida</b></td>
+              <td><b>Destino</b></td>
+              <td><b>Restricciones</b></td>
+            </tr>
+            <tr>
+              <td>Datos del cliente</td>
+              <td>Registro del cliente</td>
+              <td>Base de datos</td>
+              <td>Módulo de pedido</td>
+              <td>El usuario debe estar registrado en la base de datos</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Proceso</b></td>
+              <td colspan="4">
+                <ol>
+                  <li style="text-align: left;">La persona debe ingresar</li>
+                  <li style="text-align: left;">Selecciona la cantidad de productos que desea</li>
+                  <li style="text-align: left;">Ir a registrarse en el modulo de pedidos</li>
+                </ol>
+              </td>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Efecto Colateral</b></td>
+              <td colspan="4">Se incorpora pedido en la base de datos</td>
+            </tr>
+            </tr>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td colspan="2"><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td colspan="2">Módulo de pedidos</td>
+              <td>26/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">En este módulo los usuarios verificaran los pedidos de los productos que hayan elegido ,
+                Para luego hacer el pago</td>
+            </tr>
+            <tr style="background-color: darkgrey;">
+              <td><b>Entradas</b></td>
+              <td><b>Fuente</b></td>
+              <td><b>Salida</b></td>
+              <td><b>Destino</b></td>
+              <td><b>Restricciones</b></td>
+            </tr>
+            <tr>
+              <td>Pedidos</td>
+              <td>Modulo pedidos</td>
+              <td>Base de datos</td>
+              <td>Módulo de pago</td>
+              <td>El usuario debe estar registrado.</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Proceso</b></td>
+              <td colspan="4">
+                <ol>
+                  <li style="text-align: left;">La persona debe iniciar sesión.</li>
+                  <li style="text-align: left;">Verificar pedido.</li>
+                  <li style="text-align: left;">Debe ir al módulo de pago y realizar el respectivo pago de los
+                    productos.
+                  </li>
+                </ol>
+              </td>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Efecto Colateral</b></td>
+              <td colspan="4">Anulación del pedido en caso de que el pago no se realice correctamente</td>
+            </tr>
+            </tr>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td colspan="2"><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td colspan="2">Módulo de Pago</td>
+              <td>26/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">En este módulo se verificaran los pagos hechos por los clientes de manera virtual o física
+                y
+                se generara una factura para ser entregada al cliente en físico o bien podría ser electrónica y se le
+                mandaría al correo del cliente.</td>
+            </tr>
+            <tr style="background-color: darkgrey;">
+              <td><b>Entradas</b></td>
+              <td><b>Fuente</b></td>
+              <td><b>Salida</b></td>
+              <td><b>Destino</b></td>
+              <td><b>Restricciones</b></td>
+            </tr>
+            <tr>
+              <td>Pago</td>
+              <td>Transacción</td>
+              <td>Factura</td>
+              <td>Base de datos</td>
+              <td>Que el pago se realice correctamente</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Proceso</b></td>
+              <td colspan="4">
+                <ol>
+                  <li style="text-align: left;">Realizar pago de manera virtual o físico</li>
+                  <li style="text-align: left;">Verificar pago</li>
+                  <li style="text-align: left;">Generar factura en la base de datos</li>
+                  <li style="text-align: left;">Imprimir o mandar al correo </li>
+                  <li style="text-align: left;">Guardar esa factura en la base de datos (tabla de facturas)</li>
+                </ol>
+              </td>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Efecto Colateral</b></td>
+              <td colspan="4">Que se anule la venta en caso de que el pago no esté completo</td>
+            </tr>
+            </tr>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td colspan="2"><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>05</td>
+              <td colspan="2">Módulo de registro de usuario</td>
+              <td>26/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">En este modulo se podrán registrar los diferentes usuarios del sistema como son: <ol>
+                  <li style="text-align: left;">Cliente el cual se puede registrar solo en la plataforma</li>
+                  <li style="text-align: left;">Empleado que debe ser registrado por el administrador </li>
+                </ol>
+              </td>
+            </tr>
+            <tr style="background-color: darkgrey;">
+              <td><b>Entradas</b></td>
+              <td><b>Fuente</b></td>
+              <td><b>Salida</b></td>
+              <td><b>Destino</b></td>
+              <td><b>Restricciones</b></td>
+            </tr>
+            <tr>
+              <td>Información de usuario</td>
+              <td>Formulario de registro</td>
+              <td>Base de datos</td>
+              <td>Menú principal</td>
+              <td>Debe tener asignado un rol en el sistema. <br>
+                (Cliente, Vendedor, Administrador)</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Proceso</b></td>
+              <td colspan="4">
+                <ol>
+                  <li style="text-align: left;">El usuario (cliente) debe digitar sus datos personales</li>
+                  <li style="text-align: left;">El usuario (cliente) debe crear un usuario y una contraseña</li>
+                  <li style="text-align: left;">Confirmar por correo electrónico</li>
+                  <li style="text-align: left;">Cuando se registra un usuario (vendedor) debe ser registrado por un
+                    usuario(Administrador)</li>
+                </ol>
+              </td>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Efecto Colateral</b></td>
+              <td colspan="4">Que el usuario no se pueda registrar</td>
+            </tr>
+            </tr>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td colspan="2"><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>06</td>
+              <td colspan="2">Módulo de PQR (peticiones, quejas y reclamos)</td>
+              <td>26/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">Se requiere un modulo para atender las peticiones, quejas o reclamos que interponen los
+                clientes en el almacén o en la plataforma. El sistema deberá permitir la consulta, registro,
+                actualización e impresión del PQR en un formato que deba tener de la petición: Tipo, fecha, descripción,
+                origen, estado. Y del cliente se necesita saber: Sus datos personales y de contacto. Solo el
+                administrador puede cambiar el estado de la PQR.</td>
+            </tr>
+            <tr style="background-color: darkgrey;">
+              <td><b>Entradas</b></td>
+              <td><b>Fuente</b></td>
+              <td><b>Salida</b></td>
+              <td><b>Destino</b></td>
+              <td><b>Restricciones</b></td>
+            </tr>
+            <tr>
+              <td>Petición, queja, reclamo</td>
+              <td>Formulario de PQR</td>
+              <td>Base de datos</td>
+              <td>Menú principal</td>
+              <td>Ser cliente</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Proceso</b></td>
+              <td colspan="4">
+                <ol>
+                  <li style="text-align: left;">Iniciar sesión</li>
+                  <li style="text-align: left;">Seleccionar tipo de PQR</li>
+                  <li style="text-align: left;">Describir PQR</li>
+                  <li style="text-align: left;">Enviar PQR.</li>
+                </ol>
+              </td>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Efecto Colateral</b></td>
+              <td colspan="4">Que el PQR no sea valido</td>
+            </tr>
+            </tr>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td colspan="2"><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>07</td>
+              <td colspan="2">Gestión de proveedores</td>
+              <td>26/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">Se requiere un modulo para la gestión de los proveedores donde se puedan agregar,
+                eliminar, modificar y consultar los proveedores. Debe contar con un formulario en el cual este el Nit,
+                nombre, dirección, correo del proveedor.
+                Este modulo solo lo podrá gestionar el administrador.</td>
+            </tr>
+            <tr style="background-color: darkgrey;">
+              <td><b>Entradas</b></td>
+              <td><b>Fuente</b></td>
+              <td><b>Salida</b></td>
+              <td><b>Destino</b></td>
+              <td><b>Restricciones</b></td>
+            </tr>
+            <tr>
+              <td>Datos del proveedor</td>
+              <td>Formulario del proveedor</td>
+              <td>Base de datos</td>
+              <td>Menú principal </td>
+              <td>Rol administrador</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Proceso</b></td>
+              <td colspan="4">
+                <ol>
+                  <li style="text-align: left;">Entrar al modulo de proveedores</li>
+                  <li style="text-align: left;">Ingresar información del proveedor</li>
+                </ol>
+              </td>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Efecto Colateral</b></td>
+              <td colspan="4">Se incorporara la información del proveedor en la base de datos</td>
+            </tr>
+            </tr>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td colspan="2"><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>08</td>
+              <td colspan="2">Modulo de productos</td>
+              <td>26/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">En este modulo se requiere que se puedan gestionar todos los procesos sobre los los
+                productos que serian: El ingreso , eliminación y edición de los productos en la base de datos.
+                A esta modulo solo tendrán acceso el usuario (administrador) y el usuario (empleado).
+              </td>
+            </tr>
+            <tr style="background-color: darkgrey;">
+              <td><b>Entradas</b></td>
+              <td><b>Fuente</b></td>
+              <td><b>Salida</b></td>
+              <td><b>Destino</b></td>
+              <td><b>Restricciones</b></td>
+            </tr>
+            <tr>
+              <td>Datos de producto</td>
+              <td>Formulario de producto</td>
+              <td>Base de datos</td>
+              <td>Menú principal</td>
+              <td>Rol empleado</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Proceso</b></td>
+              <td colspan="4">
+                <ol>
+                  <li style="text-align: left;">Verificar productos</li>
+                  <li style="text-align: left;">Ingresarlos al sistema </li>
+                </ol>
+              </td>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Efecto Colateral</b></td>
+              <td colspan="4">Que no se pueda registrar el producto porque ya existe en el sistema.</td>
+            </tr>
+            </tr>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td colspan="2"><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>09</td>
+              <td colspan="2">Módulo de reporte</td>
+              <td>26/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">Este módulo permite realizar reportes de la diferente información que habrá en la base de
+                datos.</td>
+            </tr>
+            <tr style="background-color: darkgrey;">
+              <td><b>Entradas</b></td>
+              <td><b>Fuente</b></td>
+              <td><b>Salida</b></td>
+              <td><b>Destino</b></td>
+              <td><b>Restricciones</b></td>
+            </tr>
+            <tr>
+              <td>Tipo de reporte <br>
+                Fecha de reporte <br>
+                Formato de reporte</td>
+              <td>Formulario de reporte</td>
+              <td>Documento(pdf,docx,xlsx)</td>
+              <td>Menú de reporte</td>
+              <td>Solo debe ser realizado por: administrador y vendedor</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Proceso</b></td>
+              <td colspan="4">
+                <ol>
+                  <li style="text-align: left;">Seleccionar tipo de reporte</li>
+                  <li style="text-align: left;">Fecha de reporte </li>
+                  <li style="text-align: left;">Formato de reporte</li>
+                  <li style="text-align: left;">Realizar búsqueda de reporte</li>
+                </ol>
+              </td>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Efecto Colateral</b></td>
+              <td colspan="4">No se puede dar reporte a una fecha posterior</td>
+            </tr>
+            </tr>
+          </table>
+          <br>
+          <li>
+            <b>Requerimientos No Funcionales</b>
+          </li>
+          <br>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>Usabilidad</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">El sistema deberá proveer una interfaz amigable al usuario, que sea fácil
+                de aprender y de usar. <br>
+                Se pretende que la navegación entre las distintas
+                funcionalidades del sistema sea realizada en forma sencilla y en pocos
+                pasos. <br>
+                La interfaz deberá ofrecer funcionalidades para realizar tareas
+                repetitivas en forma automática.</td>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>Fiabilidad</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">Es uno de los factores que dará confianza al cliente, para lo cual el sistema está
+                controlando todo tipo de transacción y esta apto a responder todo tipo de incidente. <br>
+                Mantendrá la confianza entre usuarios hacia el sistema, la probabilidad de operación libre de fallos de
+                un programa de computadora. Característica fundamental de los sistemas informáticos por la que se mide
+                el tiempo de funcionamiento sin fallos.</td>
+
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td>Portabilidad</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">Este requerimiento asegura que el sistema será totalmente portable en cuanto se refiere a
+                sistemas operativos en MacOS, Linux Windows, también así mismo este pueda ser utilizado a través de
+                diferentes navegadores como: Mozilla, Chrome, Microsoft Edge, Opera que pueda mantener esa portabilidad
+              </td>
+
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td>Mantenibilidad</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">El sistema cuenta con un soporte, en caso de que esté presente un comportamiento fuera de
+                contexto o incorrecto referente a sus funciones parametrizables, lo que permitirá futuros
+                mantenimientos. <br>
+                Esta característica representa la capacidad del producto software para ser modificado efectiva y
+                eficientemente, debido a necesidades evolutivas, correctivas o perfectivas. <br>
+                Es necesaria como alternativa por si se requiere de alguna información en específico inmediatamente el
+                usuario podrá acceder a este módulo. <br>
+                Permitiendo al usuario una mejor compresión del sistema y conocerlo un poco más a través de estos
+                servicios de ayuda.
+              </td>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>05</td>
+              <td>Seguridad</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">El sitio web deberá ser seguro para que clientes o empleados se autentiquen para acceder a
+                un área privada es muy importante que el sitio web sea seguro. De esa manera se podrá evitar que el
+                usuario y contraseña transmitidos sean obtenidos por otras personas que intercepten la comunicación</td>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>06</td>
+              <td>Disponibilidad</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">La disponibilidad del sistema debe ser continua con un nivel de servicio para los usuarios
+                de 7 días por 24 horas.
+              </td>
+          </table>
+          <br>
+          <li>
+            <b>Requerimientos de interfaz de usuario</b>
+          </li>
+          <br>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>Interfaz de inicio de sesión</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">En esta interfaz el usuario podrá iniciar sesión en la plataforma, esta interfaz contara
+                con dos campos de estrada uno para el usuario y otro para la contraseña y va contener un botón para
+                iniciar sesión.
+              </td>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>Interfaz menú principal</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">En esta interfaz el usuario podrá ver e interactuara con los distintos módulos de la
+                plataforma los cuales son: Modulo de reporte, modulo de registro de usuario, modulo de proveedores,
+                modulo de productos, modulo de pedidos, modulo de PQR, modulo de pago y modulo de ventas.
+              </td>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td>Interfaz de ventas</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">En esta interfaz el usuario cliente podrá ver los productos sus precios y las fotos e ir
+                escogiendo los que va a comprar o guardar en el modulo de pedido.
+                Siendo una interfaz amigable con el usuario, de fácil acceso y rápida a la hora de navegar mejorando la
+                experiencia del cliente.</td>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td>Interfaz de pedidos</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">En esta interfaz en usuario cliente hará los pedidos correspondientes a su compra. Y estos
+                pedidos se almacenaran en esta interfaz hasta que el usuario decida concretar la compra.
+              </td>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>05</td>
+              <td>Interfaz de pagos</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">En esta interfaz se harán las verificaciones de los pagos hechos por los clientes de
+                manera virtual o física y aquí mismo se generara una factura que le sera entregada al cliente ya sea en
+                físico o enviada a su correo electrónico</td>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>06</td>
+              <td>Interfaz de registro de usuario</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">En esta interfaz el usuario se podrá registrar en la plataforma por si mismo cuando es un
+                cliente.
+                Cuando es un empleado debe ser registrado por el administrador.</td>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>07</td>
+              <td>Interfaz de PQR(Peticiones, Quejas, Reclamos)</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">Interfaz en la cual el cliente podrá realizar sus peticiones, quejas o reclamos sobre
+                algún producto o ventas que le hayan sido realizadas. En esta interfaz habrá un formulario donde el
+                cliente colocara el tipo, la descripción y la fecha del PQR.</td>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>08</td>
+              <td>Interfaz de gestión de proveedores</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">En esta interfaz se gestionara toda la información sobre los proveedores que serian: El
+                ingreso , eliminación y edición de los proveedores en la base de datos.
+                A esta interfaz solo tendrán acceso el administrador y el empleado.</td>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>09</td>
+              <td>Interfaz de productos</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">En esta interfaz se gestionaran todos los procesos sobre los los productos que serian: El
+                ingreso , eliminación y edición de los productos en la base de datos.
+                A esta interfaz solo tendrán acceso el administrador y el empleado.</td>
+          </table>
+          <hr>
+          <table>
+            <tr style="background-color: darkgrey;">
+              <td><b>Codigo</b></td>
+              <td><b>Nombre</b></td>
+              <td><b></b>Fecha</b></td>
+              <td><b>Grado De Necesidad</b></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Interfaz de reportes.</td>
+              <td>2/07/2020</td>
+              <td>Alto</td>
+            </tr>
+            <tr>
+              <td style="background-color: darkgrey;"><b>Descripción</b></td>
+              <td colspan="4">A esta interfaz solo podrán ingresar el administrador a solicitar reporte de cualquier
+                información almacenada en la base de datos como las siguientes:
+              <ul style="text-align: left;">
+                <li>Reporte de ventas</li>
+                <li>Reporte de pedidos</li>
+                <li>Reporte de productos</li>
+                <li>Reporte de facturación</li>
+              </ul>
+              </td>
+          </table>
+        </ol>
       </li>
     </ol>
-
-
 
 
   </section>
