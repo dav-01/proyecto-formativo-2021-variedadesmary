@@ -1,0 +1,2 @@
+class DetallePedido < ApplicationRecord
+end

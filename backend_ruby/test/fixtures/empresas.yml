@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nit_empresa: 1
+  logo: MyString
+  tipo: MyString
+
+two:
+  nit_empresa: 1
+  logo: MyString
+  tipo: MyString

@@ -1,0 +1,2 @@
+class DetalleFactura < ApplicationRecord
+end
