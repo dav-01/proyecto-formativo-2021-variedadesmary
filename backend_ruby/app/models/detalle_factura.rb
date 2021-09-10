@@ -1,2 +1,0 @@
-class DetalleFactura < ApplicationRecord
-end

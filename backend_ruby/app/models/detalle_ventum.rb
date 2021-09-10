@@ -1,2 +1,0 @@
-class DetalleVentum < ApplicationRecord
-end
