@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code_order: 1
+  code_detail_order: 1
+  code_customer: 1
+  code_employee: 1
+  code_product: 1
+  date: 2021-09-15
+
+two:
+  code_order: 1
+  code_detail_order: 1
+  code_customer: 1
+  code_employee: 1
+  code_product: 1
+  date: 2021-09-15

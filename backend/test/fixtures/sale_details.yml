@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code_sale_detail: 1
+  code_sale: 1
+  product: MyString
+  description: MyString
+  unit_value: 1
+  total_value: 1
+
+two:
+  code_sale_detail: 1
+  code_sale: 1
+  product: MyString
+  description: MyString
+  unit_value: 1
+  total_value: 1
