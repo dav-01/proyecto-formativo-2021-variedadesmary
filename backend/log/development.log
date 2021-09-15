@@ -148,3 +148,636 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 4902)
 
 
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:28:55 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 141)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 8093)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 9463)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:29:07 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 6955)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 7454)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:29:27 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 6968)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 7412)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:29:35 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 6971)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 7414)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:29:43 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 6969)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 7413)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:31:08 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 7578)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 8906)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:31:36 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 6974)
+Completed 200 OK in 16ms (Views: 14.1ms | Allocations: 7468)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:32:01 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 7440)
+Completed 200 OK in 17ms (Views: 16.1ms | Allocations: 7880)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:32:52 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 6973)
+Completed 200 OK in 19ms (Views: 18.3ms | Allocations: 7413)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:32:53 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2889)
+Completed 200 OK in 9ms (Views: 7.1ms | Allocations: 3331)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:32:55 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2893)
+Completed 200 OK in 7ms (Views: 6.8ms | Allocations: 3335)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:33:06 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 7452)
+Completed 200 OK in 17ms (Views: 15.7ms | Allocations: 7892)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:33:13 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 6973)
+Completed 200 OK in 22ms (Views: 17.2ms | Allocations: 7413)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:33:26 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 7452)
+Completed 200 OK in 19ms (Views: 17.6ms | Allocations: 7892)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:33:55 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 8355)
+Completed 200 OK in 20ms (Views: 19.1ms | Allocations: 8796)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeviseToUsers (20210915133657)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "email" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "encrypted_password" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" varchar[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_sent_at" datetime[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_created_at" datetime[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210915133657"]]
+  [1m[36mTRANSACTION (100.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/home/index" for 127.0.0.1 at 2021-09-15 08:38:25 -0500
+  
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x00005631da26a658 @set=#<ActionDispatch::Routing::RouteSet:0x00005631d9d42810>, @draw_paths=[#<Pathname:/opt/lampp/htdocs/proyecto-formativo-2021-variedadesmary/backend/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00005631da26a590 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00005631d9f41b20 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:38:30 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 57)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3150)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 3931)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:39:27 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2887)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 3377)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:40:21 -0500
+  
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x00007fd810e62540 @set=#<ActionDispatch::Routing::RouteSet:0x00005631d9d42810>, @draw_paths=[#<Pathname:/opt/lampp/htdocs/proyecto-formativo-2021-variedadesmary/backend/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007fd810e624f0 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00005631d9f41b20 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:40:23 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3422)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 4881)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:40:24 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2887)
+Completed 200 OK in 11ms (Views: 10.2ms | Allocations: 3374)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:40:25 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2893)
+Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 3333)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:40:26 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2887)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 3327)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:40:26 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2887)
+Completed 200 OK in 5ms (Views: 4.9ms | Allocations: 3327)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:40:50 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 3712)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3786)
+Completed 500 Internal Server Error in 17ms (Allocations: 5076)
+
+
+  
+ActionView::Template::Error (undefined method `before_action' for #<ActionView::Base:0x00000000009290>):
+    1: <%= before_action :authenticate_user! %>
+    2: 
+    3: <h1>Menu principal</h1>
+  
+app/views/home/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:40:56 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 3693)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3767)
+Completed 500 Internal Server Error in 15ms (Allocations: 5094)
+
+
+  
+ActionView::Template::Error (undefined method `before_action' for #<ActionView::Base:0x000000000096f0>):
+    1: <% before_action :authenticate_user! %>
+    2: 
+    3: <h1>Menu principal</h1>
+  
+app/views/home/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:40:58 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3554)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3622)
+Completed 500 Internal Server Error in 9ms (Allocations: 4083)
+
+
+  
+ActionView::Template::Error (undefined method `before_action' for #<ActionView::Base:0x00000000009b00>):
+    1: <% before_action :authenticate_user! %>
+    2: 
+    3: <h1>Menu principal</h1>
+  
+app/views/home/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:40:59 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 3554)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3622)
+Completed 500 Internal Server Error in 10ms (Allocations: 4026)
+
+
+  
+ActionView::Template::Error (undefined method `before_action' for #<ActionView::Base:0x00000000009dd0>):
+    1: <% before_action :authenticate_user! %>
+    2: 
+    3: <h1>Menu principal</h1>
+  
+app/views/home/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:41:02 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 3554)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3622)
+Completed 500 Internal Server Error in 15ms (Allocations: 4026)
+
+
+  
+ActionView::Template::Error (undefined method `before_action' for #<ActionView::Base:0x0000000000a0a0>):
+    1: <% before_action :authenticate_user! %>
+    2: 
+    3: <h1>Menu principal</h1>
+  
+app/views/home/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:41:04 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 3554)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3622)
+Completed 500 Internal Server Error in 13ms (Allocations: 4026)
+
+
+  
+ActionView::Template::Error (undefined method `before_action' for #<ActionView::Base:0x0000000000a370>):
+    1: <% before_action :authenticate_user! %>
+    2: 
+    3: <h1>Menu principal</h1>
+  
+app/views/home/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:41:26 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3420)
+Completed 200 OK in 11ms (Views: 9.9ms | Allocations: 4734)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:41:27 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2887)
+Completed 200 OK in 7ms (Views: 5.9ms | Allocations: 3374)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:42:47 -0500
+  
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x00005631d97bbd10 @set=#<ActionDispatch::Routing::RouteSet:0x00005631d9d42810>, @draw_paths=[#<Pathname:/opt/lampp/htdocs/proyecto-formativo-2021-variedadesmary/backend/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00005631d97bba90 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00005631d9f41b20 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:43:03 -0500
+  
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x00007fd810c965b8 @set=#<ActionDispatch::Routing::RouteSet:0x00005631d9d42810>, @draw_paths=[#<Pathname:/opt/lampp/htdocs/proyecto-formativo-2021-variedadesmary/backend/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007fd810c96568 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00005631d9f41b20 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:43:05 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 57)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3150)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 3922)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:45:31 -0500
+  
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x00007fd8106c0a08 @set=#<ActionDispatch::Routing::RouteSet:0x00005631d9d42810>, @draw_paths=[#<Pathname:/opt/lampp/htdocs/proyecto-formativo-2021-variedadesmary/backend/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007fd8106c09b8 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00005631d9f41b20 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:45:32 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3420)
+Completed 200 OK in 10ms (Views: 8.8ms | Allocations: 4876)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:45:32 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2887)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 3373)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:45:33 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2887)
+Completed 200 OK in 5ms (Views: 4.6ms | Allocations: 3327)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-09-15 08:45:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-09-15 08:45:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-09-15 08:45:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-09-15 08:45:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-09-15 08:45:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-09-15 08:45:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-09-15 08:46:26 -0500
+  
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x00007fd7e40146e0 @set=#<ActionDispatch::Routing::RouteSet:0x00005631d9d42810>, @draw_paths=[#<Pathname:/opt/lampp/htdocs/proyecto-formativo-2021-variedadesmary/backend/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007fd7e4014690 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00005631d9f41b20 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-09-15 08:46:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-09-15 08:46:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-09-15 08:46:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-09-15 08:46:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-09-15 08:46:42 -0500
+  
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x00007fd8041590d0 @set=#<ActionDispatch::Routing::RouteSet:0x00005631d9d42810>, @draw_paths=[#<Pathname:/opt/lampp/htdocs/proyecto-formativo-2021-variedadesmary/backend/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007fd804159080 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00005631d9f41b20 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-09-15 08:46:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-09-15 08:46:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-09-15 08:46:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+Started GET "/users" for 127.0.0.1 at 2021-09-15 08:46:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2021-09-15 08:47:00 -0500
+  
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x00005631d9f9f5b8 @set=#<ActionDispatch::Routing::RouteSet:0x00005631d9d42810>, @draw_paths=[#<Pathname:/opt/lampp/htdocs/proyecto-formativo-2021-variedadesmary/backend/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00005631d9f9f540 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00005631d9f41b20 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/users" for 127.0.0.1 at 2021-09-15 08:47:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2021-09-15 08:47:02 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-09-15 08:47:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-09-15 08:47:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:47:47 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 462)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 9753)
+Completed 200 OK in 34ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 14437)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-09-15 08:47:53 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 271)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 605)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 233.2ms | Allocations: 8932)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 237.5ms | Allocations: 11981)
+Completed 200 OK in 259ms (Views: 242.2ms | ActiveRecord: 0.5ms | Allocations: 21618)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:51:15 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 204)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3481)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 4970)
+
+
+Started GET "/devise/registrations/new.html.erb" for 127.0.0.1 at 2021-09-15 08:51:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/devise/registrations/new.html.erb"):
+  
+Started GET "/devise/registrations/new.html.erb" for 127.0.0.1 at 2021-09-15 08:51:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/devise/registrations/new.html.erb"):
+  
+Started GET "/devise/registrations/new.html.erb" for 127.0.0.1 at 2021-09-15 08:51:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/devise/registrations/new.html.erb"):
+  
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:51:40 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3477)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 4920)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:51:41 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2912)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3413)
+
+
+Started GET "/new_user_session_path" for 127.0.0.1 at 2021-09-15 08:51:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/new_user_session_path"):
+  
+Started GET "/new_user_session_path" for 127.0.0.1 at 2021-09-15 08:52:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/new_user_session_path"):
+  
+Started GET "/new_user_session_path" for 127.0.0.1 at 2021-09-15 08:52:41 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/new_user_session_path"):
+  
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:52:45 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 247)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3521)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 4938)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:52:47 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2932)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 3426)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-15 08:52:47 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2932)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3378)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-09-15 08:52:48 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 673)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 27.4ms | Allocations: 2746)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 5793)
+Completed 200 OK in 49ms (Views: 34.2ms | ActiveRecord: 0.0ms | Allocations: 8476)
+
+

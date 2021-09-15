@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+ *{
+   margin: 0;
+   padding: 0;
+ }
+
+header{
+  border: solid 1px red;
+  height: 50px;
+  background: #1eacf8;
+}
+section{
+  border: solid 1px green;
+  height: 700px;
+}
+footer{
+  border: solid 1px yellow;
+  height: 50px
+}
