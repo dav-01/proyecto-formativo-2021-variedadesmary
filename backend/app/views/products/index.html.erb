@@ -1,0 +1,36 @@
+<h1>Productos</h1>
+<hr>
+ <table>
+   <tr>
+     <thead>
+       <th>Nombre</th>
+       <th>Precio</th>
+       <th>Descripcion</th>
+       <th>Caracteristica</th>
+       <th>Marca</th>
+       <th>Kind</th>
+       <th>discount</th>
+       <th>reference</th>
+       <th>Fotos</th>
+     </thead>
+   </tr>
+   <% @products.each do |product| %>
+   <tr>
+     <td><%= product.name %></td>
+     <td><%= product.price %></td>
+     <td><%= product.description %></td>
+     <td><%= product.characteristic %></td>
+     <td><%=  %></td>
+     <td><%=  %></td>
+     <td><%=  %></td>
+     <td><%=  %></td>
+     <td><%=  %></td>
+
+     <td>
+       <%= link_to "Editar" %>
+       <%= link_to "Eliminar" %>
+
+     </td>
+   </tr>
+   <% end %>
+ </table>
