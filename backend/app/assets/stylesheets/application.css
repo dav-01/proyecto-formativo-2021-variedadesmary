@@ -18,15 +18,14 @@
    margin: 0;
    padding: 0;
  }
-
 header{
-  border: solid 1px red;
-  height: 50px;
-  background: #1eacf8;
+
 }
 section{
-  border: solid 1px green;
   height: 700px;
+  width: 95%;
+  margin: auto;
+
 }
 footer{
   border: solid 1px yellow;
