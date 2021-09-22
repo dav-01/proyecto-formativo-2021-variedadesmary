@@ -18,12 +18,12 @@
   <td><%= supplier.telephone %></td>
   <td><%= supplier.address %></td>
   <td>
-    <%= link_to "Editar"%>
-    <%= link_to "Eliminar" %>
+    <%= link_to "Editar", edit_supplier_path(supplier)%>
+    <%= link_to "Eliminar", supplier, method: :delete, data: {confirm: "Desea eliminar este proveedor?"} %>
   </td>
 
 </tr>
 <% end %>
 </table>
 
-<%= link_to "Crear nuevo proveedor", new_product_path %>
+<%= link_to "Crear nuevo proveedor", new_supplier_path %>

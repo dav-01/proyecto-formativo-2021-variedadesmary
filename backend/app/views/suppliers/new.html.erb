@@ -1,0 +1,15 @@
+<h1>Nuevo Proveedor</h1>
+
+
+<div class="form_suppliers">
+  <%= simple_form_for @supplier do |f| %>
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.input :telephone %>
+    <%= f.input :address %>
+    <div class="boton_enviar">
+      <%= f.button :submit %>
+    </div>
+
+  <% end %>
+</div>
