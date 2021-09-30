@@ -9,3 +9,17 @@
   display: inline-block;
   background: blue;
 }
+
+.flex-container{
+  margin-top: 20px;
+  display: flex;
+  border: solid 1px;
+  background: lightgreen;
+  flex-wrap: wrap;
+}
+
+.flex-item{
+  border: solid 1px;
+  width: 300px;
+  text-align: center;
+}
