@@ -1,15 +1,17 @@
-
-
-
-<%= simple_form_for @product do |f| %>
-  <%= f.input :name %>
-  <%= f.input :price %>
-  <%= f.input :description %>
-  <%= f.input :characteristic %>
-  <%= f.input :mark %>
-  <%= f.input :kind %>
-  <%= f.input :discount %>
-  <%= f.input :reference %>
-  <%= f.input :photos %>
-  <%= f.button :submit %>
-<% end %>
+<h1>Actualizar producto</h1>
+<div class="form_suppliers">
+  <%= simple_form_for @product do |f| %>
+    <%= f.input :name, label: 'Nombre' %>
+    <%= f.input :price, label: 'Precio' %>
+    <%= f.input :description, label: 'Descripcion', as: :text %>
+    <%= f.input :characteristic, label: 'Caracteristica' %>
+    <%= f.input :mark, label: 'Marca' %>
+    <%= f.input :kind, label: 'Tipo' %>
+    <%= f.input :discount, label: 'Descuento' %>
+    <%= f.input :reference, label: 'Referencia' %>
+    <%= f.input :photos, label: 'Fotos' %>
+    <div class="boton_enviar">
+      <%= f.button :submit, "Actualizar producto" %>
+    </div>
+  <% end %>
+</div>
