@@ -39911,3 +39911,3245 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.1ms | Allocations: 5590)
 
 
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAvatarToUsers (20210930192021)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "avatar" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210930192021"]]
+  [1m[36mTRANSACTION (148.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (12.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAvatarToUsers (20210930192021)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL, "telephone" integer DEFAULT NULL, "photo" varchar DEFAULT NULL, "sex" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "birth_date" date DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime DEFAULT NULL, "remember_created_at" datetime DEFAULT NULL, "avatar" varchar DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "ausers" ("id","name","last_name","telephone","photo","sex","address","birth_date","created_at","updated_at","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","avatar")
+                     SELECT "id","name","last_name","telephone","photo","sex","address","birth_date","created_at","updated_at","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","avatar" FROM "users"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL, "telephone" integer DEFAULT NULL, "photo" varchar DEFAULT NULL, "sex" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "birth_date" date DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime DEFAULT NULL, "remember_created_at" datetime DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "users" ("id","name","last_name","telephone","photo","sex","address","birth_date","created_at","updated_at","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at")
+                     SELECT "id","name","last_name","telephone","photo","sex","address","birth_date","created_at","updated_at","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at" FROM "ausers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.9ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20210930192021"]]
+  [1m[36mTRANSACTION (89.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAvatarToUsers (20210930192021)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "products" ADD "avatar" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210930192021"]]
+  [1m[36mTRANSACTION (103.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-09-30 14:29:29 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 512.7ms | Allocations: 38507)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 522.7ms | Allocations: 43611)
+Completed 200 OK in 546ms (Views: 525.1ms | ActiveRecord: 1.3ms | Allocations: 48808)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 14:29:32 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1643)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 5298)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.2ms | Allocations: 7466)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2021-09-30 14:29:34 -0500
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (Duration: 62.5ms | Allocations: 24812)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.3ms | Allocations: 28453)
+Completed 200 OK in 75ms (Views: 72.4ms | ActiveRecord: 0.0ms | Allocations: 29196)
+
+
+Started POST "/products" for 127.0.0.1 at 2021-09-30 14:30:25 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "product"=>{"name"=>"Camisa", "price"=>"50000", "description"=>"", "characteristic"=>"", "mark"=>"", "kind"=>"", "discount"=>"", "reference"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007fcae40b02a0 @tempfile=#<Tempfile:/tmp/RackMultipart20210930-67621-529vwy.jpg>, @original_filename="camisa.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[avatar]\"; filename=\"camisa.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Crear producto"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "price", "description", "characteristic", "mark", "kind", "reference", "created_at", "updated_at", "avatar") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Camisa"], ["price", 50000], ["description", ""], ["characteristic", ""], ["mark", ""], ["kind", ""], ["reference", ""], ["created_at", "2021-09-30 19:30:25.277090"], ["updated_at", "2021-09-30 19:30:25.277090"], ["avatar", "camisa.jpg"]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (225.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+Redirected to http://127.0.0.1:3000/products
+Completed 302 Found in 242ms (ActiveRecord: 226.3ms | Allocations: 8406)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 14:30:25 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 4722)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.2ms | Allocations: 5234)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 14:38:07 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 45.8ms | Allocations: 14435)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | Allocations: 19561)
+Completed 200 OK in 86ms (Views: 63.4ms | ActiveRecord: 0.8ms | Allocations: 24988)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/products" for 127.0.0.1 at 2021-09-30 14:40:11 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 2004)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 6038)
+Completed 200 OK in 38ms (Views: 32.7ms | ActiveRecord: 0.1ms | Allocations: 7636)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 14:42:55 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (13.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 69.0ms | Allocations: 1782)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 145.0ms | Allocations: 5861)
+Completed 200 OK in 161ms (Views: 146.1ms | ActiveRecord: 13.0ms | Allocations: 7366)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 14:42:56 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 4659)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.2ms | Allocations: 5180)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 14:44:05 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  Rendered products/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 3981)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 4065)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 5481)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Productos</h1>
+<hr>
+ <table class="table table-dark table-striped">
+   <tr>
+     <thead class="table-dark">
+       <th scope="col">Nombre</th>
+       <th scope="col">Precio</th>
+       <th scope="col">Descripcion</th>
+       <th scope="col">Caracteristica</th>
+       <th scope="col">Marca</th>
+       <th scope="col">Tipo</th>
+       <th scope="col">Descuento</th>
+       <th scope="col">Referencia</th>
+       <th scope="col">Fotos</th>
+       <th scope="col">Accion</th>
+     </thead>
+   </tr>
+   <% @products.each do |product| %>
+   <tr>
+     <td><%= product.name %></td>
+     <td><%= product.price %></td>
+     <td><%= product.description %></td>
+     <td><%= product.characteristic %></td>
+     <td><%= product.mark %></td>
+     <td><%= product.kind %></td>
+     <td><%= product.discount %></td>
+     <td><%= product.reference %></td>
+     <td><%= image_tag(product.avatar_url) if product.avatar? height: 20px;%></td>
+
+     <td>
+       <%= link_to "Editar", edit_product_path(product)%>
+       <%= link_to "Eliminar", product, method: :delete, data: {confirm: "Desea eliminar este producto?"} %>
+
+     </td>
+   </tr>
+   <% end %>
+ </table>
+
+ <%= link_to "Crear nuevo producto", new_product_path %>
+
+):
+1:    <h1>Productos</h1>
+2:    <hr>
+3:     <table class="table table-dark table-striped">
+4:       <tr>
+5:         <thead class="table-dark">
+6:           <th scope="col">Nombre</th>
+7:           <th scope="col">Precio</th>
+8:           <th scope="col">Descripcion</th>
+9:           <th scope="col">Caracteristica</th>
+10:           <th scope="col">Marca</th>
+11:           <th scope="col">Tipo</th>
+12:           <th scope="col">Descuento</th>
+13:           <th scope="col">Referencia</th>
+14:           <th scope="col">Fotos</th>
+15:           <th scope="col">Accion</th>
+16:         </thead>
+17:       </tr>
+18:       <% @products.each do |product| %>
+19:       <tr>
+20:         <td><%= product.name %></td>
+21:         <td><%= product.price %></td>
+22:         <td><%= product.description %></td>
+23:         <td><%= product.characteristic %></td>
+24:         <td><%= product.mark %></td>
+25:         <td><%= product.kind %></td>
+26:         <td><%= product.discount %></td>
+27:         <td><%= product.reference %></td>
+28:         <td><%= image_tag(product.avatar_url) if product.avatar? height: 20px;%></td>
+29:    
+30:         <td>
+31:           <%= link_to "Editar", edit_product_path(product)%>
+32:           <%= link_to "Eliminar", product, method: :delete, data: {confirm: "Desea eliminar este producto?"} %>
+33:    
+34:         </td>
+35:       </tr>
+36:       <% end %>
+37:     </table>
+38:    
+39:     <%= link_to "Crear nuevo producto", new_product_path %>
+  
+app/views/products/index.html.erb:28: syntax error, unexpected local variable or method, expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected local variable or method, expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected local variable or method, expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected local variable or method, expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected local variable or method, expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/products" for 127.0.0.1 at 2021-09-30 14:44:56 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1758)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 5840)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.2ms | Allocations: 7358)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 14:54:06 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/home/index.html.erb:1
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 3247)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 7593)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 1.7ms | Allocations: 8823)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 14:58:00 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 4699)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.4ms | Allocations: 5225)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-09-30 14:58:01 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 5331)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 8989)
+Completed 200 OK in 23ms (Views: 18.9ms | ActiveRecord: 0.8ms | Allocations: 10635)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-09-30 14:58:01 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4323)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.2ms | Allocations: 4843)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-09-30 14:58:04 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 683)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.3ms | Allocations: 5449)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 9117)
+Completed 200 OK in 39ms (Views: 19.4ms | ActiveRecord: 1.0ms | Allocations: 18353)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-09-30 14:58:06 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.3ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 968)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4415)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.3ms | Allocations: 4952)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-09-30 14:58:07 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4322)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.2ms | Allocations: 4791)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-09-30 14:58:07 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 4322)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 4791)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-09-30 14:58:08 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.1ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4322)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.1ms | Allocations: 4788)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 14:58:09 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2010)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 5989)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.1ms | Allocations: 6462)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:00:55 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2447)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 6366)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.2ms | Allocations: 7809)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:01:28 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:5
+  Rendered home/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2447)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 6385)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.1ms | Allocations: 7874)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:01:48 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:5
+  Rendered home/index.html.erb within layouts/application (Duration: 14.5ms | Allocations: 2445)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 6385)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.2ms | Allocations: 7879)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:02:16 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2452)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 6393)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 7904)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:03:28 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2552)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 6471)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.3ms | Allocations: 7959)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:04:05 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2423)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 6342)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.2ms | Allocations: 7830)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:04:06 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5375)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 5895)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:04:40 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 74.3ms | Allocations: 34641)
+Completed 200 OK in 75ms (Views: 74.7ms | ActiveRecord: 0.1ms | Allocations: 35107)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:04:41 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5377)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 5843)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:04:49 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2006)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 19741)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.1ms | Allocations: 20207)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:04:50 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 2009)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 5412)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.1ms | Allocations: 5879)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:04:50 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2005)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 5400)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 5866)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:04:51 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2005)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 5397)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.2ms | Allocations: 5864)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:05:04 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 20262)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.1ms | Allocations: 20728)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:05:04 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 5377)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 5843)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:05:04 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5377)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 5843)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:05:04 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 4140)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 7514)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.5ms | Allocations: 7980)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:05:05 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 5377)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 5843)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:05:05 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 5377)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 5843)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:05:05 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 5377)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.1ms | Allocations: 5843)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:05:05 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2222)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 5597)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 6064)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:05:34 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.2ms | Allocations: 19115)
+Completed 200 OK in 65ms (Views: 64.6ms | ActiveRecord: 0.1ms | Allocations: 19581)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:06:00 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2009)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 19805)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.2ms | Allocations: 20271)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:06:40 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 20737)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.1ms | Allocations: 21203)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:06:41 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 5377)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms | Allocations: 5843)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:06:41 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 5377)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.1ms | Allocations: 5843)
+
+
+Started GET "/" for 127.0.0.1 at 2021-09-30 15:06:50 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 5418)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms | Allocations: 5884)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:06:51 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 6227)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.2ms | Allocations: 7409)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-09-30 15:06:51 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 5792)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.2ms | Allocations: 7043)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:06:52 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1220)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 4669)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.2ms | Allocations: 5747)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-09-30 15:06:52 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.1ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 878)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 5555)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.1ms | Allocations: 6027)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:06:54 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 4661)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.2ms | Allocations: 5133)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:06:54 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 4660)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.2ms | Allocations: 5130)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:06:55 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 5266)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.2ms | Allocations: 5735)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:06:55 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 4651)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.2ms | Allocations: 5120)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:07:32 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  Rendered products/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1381)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1456)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2876)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Productos</h1>
+<hr>
+ <table class="table table-dark table-striped">
+   <tr>
+     <thead class="table-dark">
+       <th scope="col">Nombre</th>
+       <th scope="col">Precio</th>
+       <th scope="col">Descripcion</th>
+       <th scope="col">Caracteristica</th>
+       <th scope="col">Marca</th>
+       <th scope="col">Tipo</th>
+       <th scope="col">Descuento</th>
+       <th scope="col">Referencia</th>
+       <th scope="col">Fotos</th>
+       <th scope="col">Accion</th>
+     </thead>
+   </tr>
+   <% @products.each do |product| %>
+   <tr>
+     <td><%= product.name %></td>
+     <td><%= product.price %></td>
+     <td><%= product.description %></td>
+     <td><%= product.characteristic %></td>
+     <td><%= product.mark %></td>
+     <td><%= product.kind %></td>
+     <td><%= product.discount %></td>
+     <td><%= product.reference %></td>
+     <td><%= image_tag(product.avatar_url) if product.avatar?, height: "80%", width: "100%" %></td>
+
+     <td>
+       <%= link_to "Editar", edit_product_path(product)%>
+       <%= link_to "Eliminar", product, method: :delete, data: {confirm: "Desea eliminar este producto?"} %>
+
+     </td>
+   </tr>
+   <% end %>
+ </table>
+
+ <%= link_to "Crear nuevo producto", new_product_path %>
+
+):
+1:    <h1>Productos</h1>
+2:    <hr>
+3:     <table class="table table-dark table-striped">
+4:       <tr>
+5:         <thead class="table-dark">
+6:           <th scope="col">Nombre</th>
+7:           <th scope="col">Precio</th>
+8:           <th scope="col">Descripcion</th>
+9:           <th scope="col">Caracteristica</th>
+10:           <th scope="col">Marca</th>
+11:           <th scope="col">Tipo</th>
+12:           <th scope="col">Descuento</th>
+13:           <th scope="col">Referencia</th>
+14:           <th scope="col">Fotos</th>
+15:           <th scope="col">Accion</th>
+16:         </thead>
+17:       </tr>
+18:       <% @products.each do |product| %>
+19:       <tr>
+20:         <td><%= product.name %></td>
+21:         <td><%= product.price %></td>
+22:         <td><%= product.description %></td>
+23:         <td><%= product.characteristic %></td>
+24:         <td><%= product.mark %></td>
+25:         <td><%= product.kind %></td>
+26:         <td><%= product.discount %></td>
+27:         <td><%= product.reference %></td>
+28:         <td><%= image_tag(product.avatar_url) if product.avatar?, height: "80%", width: "100%" %></td>
+29:    
+30:         <td>
+31:           <%= link_to "Editar", edit_product_path(product)%>
+32:           <%= link_to "Eliminar", product, method: :delete, data: {confirm: "Desea eliminar este producto?"} %>
+33:    
+34:         </td>
+35:       </tr>
+36:       <% end %>
+37:     </table>
+38:    
+39:     <%= link_to "Crear nuevo producto", new_product_path %>
+  
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:07:47 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2189)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2263)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms | Allocations: 3719)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    25:      <td><%= product.kind %></td>
+    26:      <td><%= product.discount %></td>
+    27:      <td><%= product.reference %></td>
+    28:      <td><%= image_tag(product.avatar_url) if product.avatar? height: "80%", width: "100%" %></td>
+    29: 
+    30:      <td>
+    31:        <%= link_to "Editar", edit_product_path(product)%>
+  
+app/views/products/index.html.erb:28
+app/views/products/index.html.erb:18
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:08:46 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1751)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 21799)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.2ms | Allocations: 23297)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:08:47 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4650)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 5170)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:08:48 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 4650)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 5116)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:08:48 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 4651)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.2ms | Allocations: 5117)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:08:48 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4650)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 5128)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:08:48 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 7307)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.1ms | Allocations: 7785)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:08:49 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1204)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 4664)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms | Allocations: 5131)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:08:49 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4650)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.2ms | Allocations: 5116)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:09:01 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 20925)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.1ms | Allocations: 21391)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:09:01 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4657)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 5123)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:09:02 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4650)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.1ms | Allocations: 5116)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:09:11 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 19091)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.1ms | Allocations: 19557)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:09:11 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4650)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.1ms | Allocations: 5116)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:11:04 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1674)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 6275)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.2ms | Allocations: 7715)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:11:19 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1675)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 5756)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.5ms | Allocations: 7251)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:11:33 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1670)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 5739)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.2ms | Allocations: 7227)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:11:35 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1153)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4601)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 5124)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:11:36 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1153)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 4601)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.2ms | Allocations: 5071)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:11:36 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1153)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 4606)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.4ms | Allocations: 5075)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:11:37 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1153)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 4608)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.1ms | Allocations: 5077)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:11:37 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1153)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 4601)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.2ms | Allocations: 5070)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:14:04 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 5774)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.1ms | Allocations: 7208)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:14:06 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 4630)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4739)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 5764)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x0000000000c1c0>
+Did you mean?  product_url):
+    1: <h1>hola que tal?</h1>
+    2: <%= image_tag(product.avatar_url) if product.avatar? %>
+  
+app/views/products/show.html.erb:2
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:14:06 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 8.1ms | Allocations: 4468)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4730)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5458)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x0000000000c238>
+Did you mean?  product_url):
+    1: <h1>hola que tal?</h1>
+    2: <%= image_tag(product.avatar_url) if product.avatar? %>
+  
+app/views/products/show.html.erb:2
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:15:03 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4336)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 5765)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:15:26 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3525)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4027)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:15:26 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3525)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3979)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:15:27 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3525)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3979)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:15:35 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 4608)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4682)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 6065)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x0000000000cb20>
+Did you mean?  product_url):
+    1: <h1>hola que tal?</h1>
+    2: <%= image_tag(product.avatar_url) if product.avatar? %>
+  
+app/views/products/show.html.erb:2
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:16:08 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 4437)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4511)
+Completed 500 Internal Server Error in 10ms (Allocations: 6418)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x0000000000ef10>
+Did you mean?  @products):
+    1: <h1>hola que tal?</h1>
+    2: <%= image_tag(product.avatar_url) if product.avatar? %>
+  
+app/views/products/show.html.erb:2
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:16:09 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 4432)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4500)
+Completed 500 Internal Server Error in 9ms (Allocations: 4989)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x0000000000f1e0>
+Did you mean?  @products):
+    1: <h1>hola que tal?</h1>
+    2: <%= image_tag(product.avatar_url) if product.avatar? %>
+  
+app/views/products/show.html.erb:2
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:16:10 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 4432)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4500)
+Completed 500 Internal Server Error in 8ms (Allocations: 4927)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x0000000000f4b0>
+Did you mean?  @products):
+    1: <h1>hola que tal?</h1>
+    2: <%= image_tag(product.avatar_url) if product.avatar? %>
+  
+app/views/products/show.html.erb:2
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:16:10 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 4432)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 4500)
+Completed 500 Internal Server Error in 7ms (Allocations: 4927)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x0000000000f780>
+Did you mean?  @products):
+    1: <h1>hola que tal?</h1>
+    2: <%= image_tag(product.avatar_url) if product.avatar? %>
+  
+app/views/products/show.html.erb:2
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:16:11 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 4432)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4500)
+Completed 500 Internal Server Error in 8ms (Allocations: 4927)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x0000000000fa50>
+Did you mean?  @products):
+    1: <h1>hola que tal?</h1>
+    2: <%= image_tag(product.avatar_url) if product.avatar? %>
+  
+app/views/products/show.html.erb:2
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:17:06 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1579)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1653)
+Completed 500 Internal Server Error in 4ms (Allocations: 3185)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>hola que tal?</h1>
+    2: 
+    3: <% @products.each do |product| %>
+    4: <%= image_tag(product.avatar_url) if product.avatar? %>
+    5: <% end %>
+  
+app/views/products/show.html.erb:3
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:17:07 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1424)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1492)
+Completed 500 Internal Server Error in 4ms (Allocations: 1963)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>hola que tal?</h1>
+    2: 
+    3: <% @products.each do |product| %>
+    4: <%= image_tag(product.avatar_url) if product.avatar? %>
+    5: <% end %>
+  
+app/views/products/show.html.erb:3
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:17:10 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1424)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1492)
+Completed 500 Internal Server Error in 4ms (Allocations: 1907)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>hola que tal?</h1>
+    2: 
+    3: <% @products.each do |product| %>
+    4: <%= image_tag(product.avatar_url) if product.avatar? %>
+    5: <% end %>
+  
+app/views/products/show.html.erb:3
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:17:13 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1424)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1492)
+Completed 500 Internal Server Error in 2ms (Allocations: 1907)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>hola que tal?</h1>
+    2: 
+    3: <% @products.each do |product| %>
+    4: <%= image_tag(product.avatar_url) if product.avatar? %>
+    5: <% end %>
+  
+app/views/products/show.html.erb:3
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:17:29 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/show.html.erb:3
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:3
+  Rendered products/show.html.erb within layouts/application (Duration: 20.2ms | Allocations: 8646)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 13427)
+Completed 200 OK in 37ms (Views: 34.3ms | ActiveRecord: 1.1ms | Allocations: 15368)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-09-30 15:17:34 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 5054)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 8871)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.7ms | Allocations: 11140)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:17:36 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1585)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 5625)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.2ms | Allocations: 6283)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:17:37 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:3
+  Rendered products/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 884)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 4371)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms | Allocations: 5385)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:18:14 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:3
+  Rendered products/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1156)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 5306)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms | Allocations: 6749)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:19:06 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:3
+  Rendered products/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1177)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5315)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.1ms | Allocations: 6803)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:19:07 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:3
+  Rendered products/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 865)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4363)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 4884)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:19:08 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:3
+  Rendered products/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 865)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4351)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 4817)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:19:09 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:3
+  Rendered products/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 865)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 4351)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 4817)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:19:09 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:3
+  Rendered products/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 865)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4351)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.2ms | Allocations: 4817)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:19:09 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:3
+  Rendered products/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 865)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4351)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 4817)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:19:26 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:3
+  Rendered products/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1209)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 5359)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.1ms | Allocations: 6794)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-09-30 15:20:14 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  [1m[36mSupplier Load (0.1ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 6051)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 10386)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 1.0ms | Allocations: 12040)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:20:15 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 8353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 12184)
+Completed 200 OK in 28ms (Views: 23.1ms | ActiveRecord: 0.7ms | Allocations: 14836)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:20:17 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 4648)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.1ms | Allocations: 5166)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:20:18 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1445)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1556)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms | Allocations: 4016)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: 
+    2: 
+    3: <% @products.each do |product| %>
+    4: 
+    5: <%= product.name%>
+    6: <%= product.price%>
+  
+app/views/products/show.html.erb:3
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:20:30 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 4198)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 4272)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 6257)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Product id: 16, code_product: nil, name: "Camisa", price: 50000, description: "", characteristic: "", mark: "", kind: "", discount: nil, reference: "", photos: nil, code_supplier: nil, created_at: "2021-09-30 19:30:25.277090000 +0000", updated_at: "2021-09-30 19:30:25.277090000 +0000", avatar: "camisa.jpg">):
+    1: 
+    2: 
+    3: <% @product.each do |product| %>
+    4: 
+    5: <%= product.name%>
+    6: <%= product.price%>
+  
+app/views/products/show.html.erb:3
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:20:31 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3806)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3874)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms | Allocations: 4976)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Product id: 16, code_product: nil, name: "Camisa", price: 50000, description: "", characteristic: "", mark: "", kind: "", discount: nil, reference: "", photos: nil, code_supplier: nil, created_at: "2021-09-30 19:30:25.277090000 +0000", updated_at: "2021-09-30 19:30:25.277090000 +0000", avatar: "camisa.jpg">):
+    1: 
+    2: 
+    3: <% @product.each do |product| %>
+    4: 
+    5: <%= product.name%>
+    6: <%= product.price%>
+  
+app/views/products/show.html.erb:3
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:20:32 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3806)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3874)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 4844)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Product id: 16, code_product: nil, name: "Camisa", price: 50000, description: "", characteristic: "", mark: "", kind: "", discount: nil, reference: "", photos: nil, code_supplier: nil, created_at: "2021-09-30 19:30:25.277090000 +0000", updated_at: "2021-09-30 19:30:25.277090000 +0000", avatar: "camisa.jpg">):
+    1: 
+    2: 
+    3: <% @product.each do |product| %>
+    4: 
+    5: <%= product.name%>
+    6: <%= product.price%>
+  
+app/views/products/show.html.erb:3
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:20:33 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3806)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3874)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms | Allocations: 4844)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Product id: 16, code_product: nil, name: "Camisa", price: 50000, description: "", characteristic: "", mark: "", kind: "", discount: nil, reference: "", photos: nil, code_supplier: nil, created_at: "2021-09-30 19:30:25.277090000 +0000", updated_at: "2021-09-30 19:30:25.277090000 +0000", avatar: "camisa.jpg">):
+    1: 
+    2: 
+    3: <% @product.each do |product| %>
+    4: 
+    5: <%= product.name%>
+    6: <%= product.price%>
+  
+app/views/products/show.html.erb:3
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:20:34 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3806)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3874)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms | Allocations: 4844)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Product id: 16, code_product: nil, name: "Camisa", price: 50000, description: "", characteristic: "", mark: "", kind: "", discount: nil, reference: "", photos: nil, code_supplier: nil, created_at: "2021-09-30 19:30:25.277090000 +0000", updated_at: "2021-09-30 19:30:25.277090000 +0000", avatar: "camisa.jpg">):
+    1: 
+    2: 
+    3: <% @product.each do |product| %>
+    4: 
+    5: <%= product.name%>
+    6: <%= product.price%>
+  
+app/views/products/show.html.erb:3
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:20:36 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 7.3ms | Allocations: 3807)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3875)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 4845)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Product id: 16, code_product: nil, name: "Camisa", price: 50000, description: "", characteristic: "", mark: "", kind: "", discount: nil, reference: "", photos: nil, code_supplier: nil, created_at: "2021-09-30 19:30:25.277090000 +0000", updated_at: "2021-09-30 19:30:25.277090000 +0000", avatar: "camisa.jpg">):
+    1: 
+    2: 
+    3: <% @product.each do |product| %>
+    4: 
+    5: <%= product.name%>
+    6: <%= product.price%>
+  
+app/views/products/show.html.erb:3
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:20:49 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1210)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1285)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms | Allocations: 3222)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+
+<% @product do |product| %>
+
+<%= product.name%>
+<%= product.price%>
+
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    
+3:    <% @product do |product| %>
+4:    
+5:    <%= product.name%>
+6:    <%= product.price%>
+7:    
+8:    <%= image_tag(product.avatar_url) if product.avatar? %>
+9:    <% end %>
+  
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:22:29 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1208)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1283)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 3352)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+
+<%= @product do |product| %>
+
+<%= product.name%>
+<%= product.price%>
+
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    
+3:    <%= @product do |product| %>
+4:    
+5:    <%= product.name%>
+6:    <%= product.price%>
+7:    
+8:    <%= image_tag(product.avatar_url) if product.avatar? %>
+9:    <% end %>
+  
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:22:32 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1156)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1225)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 2328)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+
+<%= @product do |product| %>
+
+<%= product.name%>
+<%= product.price%>
+
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    
+3:    <%= @product do |product| %>
+4:    
+5:    <%= product.name%>
+6:    <%= product.price%>
+7:    
+8:    <%= image_tag(product.avatar_url) if product.avatar? %>
+9:    <% end %>
+  
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:3: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:11: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:23:45 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 41.8ms | Allocations: 21732)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 25760)
+Completed 200 OK in 58ms (Views: 52.9ms | ActiveRecord: 0.3ms | Allocations: 27742)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:24:09 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1281)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1356)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 3456)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+
+
+
+
+<div class="form_suppliers">
+  <%= simple_form_for @product do |f| %>
+    <%= f.input :name, label: 'Nombre' %>
+    <%= f.input :price, label: 'Precio' %>
+  <% end %>
+</div>
+
+
+<%= @product do |product| %>
+
+<%= product.name%>
+<%= product.price%>
+
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    
+3:    
+4:    
+5:    
+6:    <div class="form_suppliers">
+7:      <%= simple_form_for @product do |f| %>
+8:        <%= f.input :name, label: 'Nombre' %>
+9:        <%= f.input :price, label: 'Precio' %>
+10:      <% end %>
+11:    </div>
+12:    
+13:    
+14:    <%= @product do |product| %>
+15:    
+16:    <%= product.name%>
+17:    <%= product.price%>
+18:    
+19:    <%= image_tag(product.avatar_url) if product.avatar? %>
+20:    <% end %>
+  
+app/views/products/show.html.erb:14: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:14: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:14: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:14: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:14: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:14: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:24:17 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 11.3ms | Allocations: 5931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 9921)
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 0.2ms | Allocations: 12035)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:24:38 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 15.5ms | Allocations: 5908)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 9901)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.1ms | Allocations: 12009)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:24:39 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 9.3ms | Allocations: 5523)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 8882)
+Completed 200 OK in 20ms (Views: 16.0ms | ActiveRecord: 0.3ms | Allocations: 10016)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:25:03 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 16.6ms | Allocations: 10088)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 10162)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.4ms | Allocations: 12103)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x00000000019fc8>
+Did you mean?  @product):
+     6:   <%= simple_form_for @product do |f| %>
+     7:     <%= f.input :name, label: 'Nombre' %>
+     8:     <%= f.input :price, label: 'Precio' %>
+     9:     <%= image_tag(product.avatar_url) if product.avatar? %>
+    10:   <% end %>
+  
+app/views/products/show.html.erb:9
+app/views/products/show.html.erb:6
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:25:30 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 18.2ms | Allocations: 10109)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 10183)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.1ms | Allocations: 12251)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x0000000001a428>
+Did you mean?  @product):
+     6:   <%= simple_form_for @product do |f| %>
+     7:     <%= f.input :name, label: 'Nombre' %>
+     8:     <%= f.input :price, label: 'Precio' %>
+     9:     <%= image_tag(f.avatar_url) if product.avatar? %>
+    10:   <% end %>
+  
+app/views/products/show.html.erb:9
+app/views/products/show.html.erb:6
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:25:31 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 16.8ms | Allocations: 9730)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 9798)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.2ms | Allocations: 10900)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x0000000001a810>
+Did you mean?  @product):
+     6:   <%= simple_form_for @product do |f| %>
+     7:     <%= f.input :name, label: 'Nombre' %>
+     8:     <%= f.input :price, label: 'Precio' %>
+     9:     <%= image_tag(f.avatar_url) if product.avatar? %>
+    10:   <% end %>
+  
+app/views/products/show.html.erb:9
+app/views/products/show.html.erb:6
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:25:39 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 13.2ms | Allocations: 7607)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 7681)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms | Allocations: 9617)
+
+
+  
+ActionView::Template::Error (undefined method `avatar?' for #<SimpleForm::FormBuilder:0x00007f3300d9dae8 @nested_child_index={}, @options={:builder=>SimpleForm::FormBuilder, :html=>{:class=>[:simple_form, "edit_product"], :id=>"edit_product_16", :method=>:patch, :novalidate=>true, :authenticity_token=>nil}, :url=>"/products/16"}, @template=#<ActionView::Base:0x0000000001ab30>, @object=#<Product id: 16, code_product: nil, name: "Camisa", price: 50000, description: "", characteristic: "", mark: "", kind: "", discount: nil, reference: "", photos: nil, code_supplier: nil, created_at: "2021-09-30 19:30:25.277090000 +0000", updated_at: "2021-09-30 19:30:25.277090000 +0000", avatar: "camisa.jpg">, @object_name="product", @default_options={}, @default_html_options={}, @multipart=nil, @index=nil, @defaults=nil, @wrapper=#<SimpleForm::Wrappers::Root:0x000056471926f050 @namespace=:wrapper, @components=[#<SimpleForm::Wrappers::Leaf:0x000056471926f5a0 @namespace=:html5, @options={}>, #<SimpleForm::Wrappers::Leaf:0x000056471926f550 @namespace=:placeholder, @options={}>, #<SimpleForm::Wrappers::Leaf:0x000056471926f500 @namespace=:maxlength, @options={}>, #<SimpleForm::Wrappers::Leaf:0x000056471926f4b0 @namespace=:minlength, @options={}>, #<SimpleForm::Wrappers::Leaf:0x000056471926f460 @namespace=:pattern, @options={}>, #<SimpleForm::Wrappers::Leaf:0x000056471926f410 @namespace=:min_max, @options={}>, #<SimpleForm::Wrappers::Leaf:0x000056471926f3c0 @namespace=:readonly, @options={}>, #<SimpleForm::Wrappers::Leaf:0x000056471926f370 @namespace=:label, @options={}>, #<SimpleForm::Wrappers::Leaf:0x000056471926f2f8 @namespace=:input, @options={:class=>"form-control", :error_class=>"is-invalid", :valid_class=>"is-valid"}>, #<SimpleForm::Wrappers::Single:0x000056471926f230 @component=#<SimpleForm::Wrappers::Leaf:0x000056471926f208 @namespace=:full_error, @options={}>, @namespace=:full_error, @components=[#<SimpleForm::Wrappers::Leaf:0x000056471926f208 @namespace=:full_error, @options={}>], @defaults={:tag=>"div", :class=>["invalid-feedback"]}>, #<SimpleForm::Wrappers::Single:0x000056471926f0f0 @component=#<SimpleForm::Wrappers::Leaf:0x000056471926f0c8 @namespace=:hint, @options={}>, @namespace=:hint, @components=[#<SimpleForm::Wrappers::Leaf:0x000056471926f0c8 @namespace=:hint, @options={}>], @defaults={:tag=>"small", :class=>["form-text text-muted"]}>], @defaults={:tag=>"div", :class=>["form-group"], :error_class=>"form-group-invalid", :valid_class=>"form-group-valid", :maxlength=>false, :minlength=>false, :pattern=>false, :min_max=>false, :readonly=>false}, @options={:valid_class=>"form-group-valid", :maxlength=>false, :minlength=>false, :pattern=>false, :min_max=>false, :readonly=>false}>, @discovery_cache={:string=>SimpleForm::Inputs::StringInput, :integer=>SimpleForm::Inputs::NumericInput}, @lookup_model_names=["product"], @lookup_action="show">):
+     6:   <%= simple_form_for @product do |f| %>
+     7:     <%= f.input :name, label: 'Nombre' %>
+     8:     <%= f.input :price, label: 'Precio' %>
+     9:     <%= image_tag(f.avatar_url) if f.avatar? %>
+    10:   <% end %>
+  
+app/views/products/show.html.erb:9
+app/views/products/show.html.erb:6
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:26:00 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1587)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1661)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 3729)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: 
+    2: <% @products.each do |product| %>
+    3: <%= image_tag(product.avatar_url) if product.avatar? %>
+    4: <% end %>
+  
+app/views/products/show.html.erb:2
+Started GET "/products/16" for 127.0.0.1 at 2021-09-30 15:26:19 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/show.html.erb:2
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:2
+  Rendered products/show.html.erb within layouts/application (Duration: 24.0ms | Allocations: 8854)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.8ms | Allocations: 13632)
+Completed 200 OK in 45ms (Views: 41.3ms | ActiveRecord: 2.7ms | Allocations: 15576)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-09-30 15:26:22 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.3ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 5016)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 8835)
+Completed 200 OK in 34ms (Views: 30.2ms | ActiveRecord: 1.2ms | Allocations: 11145)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:26:23 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1585)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 5637)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.2ms | Allocations: 6296)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2021-09-30 15:26:24 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:2
+  Rendered products/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 879)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4959)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.2ms | Allocations: 5429)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-09-30 15:26:25 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4651)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.2ms | Allocations: 5121)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-03 22:51:43 -0500
+  [1m[35m (165.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (20.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 2036.4ms | Allocations: 36399)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2125.7ms | Allocations: 41554)
+Completed 200 OK in 2222ms (Views: 2155.9ms | ActiveRecord: 21.1ms | Allocations: 46794)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-03 22:51:51 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 5683)
+Completed 200 OK in 41ms (Views: 27.8ms | ActiveRecord: 0.1ms | Allocations: 7448)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 22:51:54 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:2
+  Rendered products/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1627)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 5226)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 5898)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-03 22:52:27 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 5937)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.1ms | Allocations: 7371)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-03 22:52:47 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1872)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 5938)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.2ms | Allocations: 7418)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-03 22:53:18 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1872)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 5933)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.2ms | Allocations: 7413)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-03 22:53:37 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1872)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 5933)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.2ms | Allocations: 7413)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-03 22:54:02 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  Rendered products/index.html.erb within layouts/application (Duration: 40.1ms | Allocations: 4013)
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 4097)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms | Allocations: 5553)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Productos</h1>
+<hr>
+ <table class="table table-dark table-striped">
+   <tr>
+     <thead class="table-dark">
+       <th scope="col">Nombre</th>
+       <th scope="col">Precio</th>
+       <th scope="col">Descripcion</th>
+       <th scope="col">Caracteristica</th>
+       <th scope="col">Marca</th>
+       <th scope="col">Tipo</th>
+       <th scope="col">Descuento</th>
+       <th scope="col">Referencia</th>
+       <th scope="col">Fotos</th>
+       <th scope="col">Accion</th>
+     </thead>
+   </tr>
+   <% @products.each do |product| %>
+   <tr>
+     <td><%= product.name %></td>
+     <td><%= product.price %></td>
+     <td><%= product.description %></td>
+     <td><%= product.characteristic %></td>
+     <td><%= product.mark %></td>
+     <td><%= product.kind %></td>
+     <td><%= product.discount %></td>
+     <td><%= product.reference %></td>
+     <td><%= image_tag(product.avatar_url) if product.avatar?, height: 30px %> <%= link_to "Ver foto", product %></td>
+     <td></td>
+
+     <td>
+       <%= link_to "Editar", edit_product_path(product)%>
+       <%= link_to "Eliminar", product, method: :delete, data: {confirm: "Desea eliminar este producto?"} %>
+
+     </td>
+   </tr>
+   <% end %>
+ </table>
+
+ <%= link_to "Crear nuevo producto", new_product_path %>
+
+):
+1:    <h1>Productos</h1>
+2:    <hr>
+3:     <table class="table table-dark table-striped">
+4:       <tr>
+5:         <thead class="table-dark">
+6:           <th scope="col">Nombre</th>
+7:           <th scope="col">Precio</th>
+8:           <th scope="col">Descripcion</th>
+9:           <th scope="col">Caracteristica</th>
+10:           <th scope="col">Marca</th>
+11:           <th scope="col">Tipo</th>
+12:           <th scope="col">Descuento</th>
+13:           <th scope="col">Referencia</th>
+14:           <th scope="col">Fotos</th>
+15:           <th scope="col">Accion</th>
+16:         </thead>
+17:       </tr>
+18:       <% @products.each do |product| %>
+19:       <tr>
+20:         <td><%= product.name %></td>
+21:         <td><%= product.price %></td>
+22:         <td><%= product.description %></td>
+23:         <td><%= product.characteristic %></td>
+24:         <td><%= product.mark %></td>
+25:         <td><%= product.kind %></td>
+26:         <td><%= product.discount %></td>
+27:         <td><%= product.reference %></td>
+28:         <td><%= image_tag(product.avatar_url) if product.avatar?, height: 30px %> <%= link_to "Ver foto", product %></td>
+29:         <td></td>
+30:    
+31:         <td>
+32:           <%= link_to "Editar", edit_product_path(product)%>
+33:           <%= link_to "Eliminar", product, method: :delete, data: {confirm: "Desea eliminar este producto?"} %>
+34:    
+35:         </td>
+36:       </tr>
+37:       <% end %>
+38:     </table>
+39:    
+40:     <%= link_to "Crear nuevo producto", new_product_path %>
+  
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+Started GET "/products" for 127.0.0.1 at 2021-10-03 22:54:10 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  Rendered products/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1388)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1464)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2936)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Productos</h1>
+<hr>
+ <table class="table table-dark table-striped">
+   <tr>
+     <thead class="table-dark">
+       <th scope="col">Nombre</th>
+       <th scope="col">Precio</th>
+       <th scope="col">Descripcion</th>
+       <th scope="col">Caracteristica</th>
+       <th scope="col">Marca</th>
+       <th scope="col">Tipo</th>
+       <th scope="col">Descuento</th>
+       <th scope="col">Referencia</th>
+       <th scope="col">Fotos</th>
+       <th scope="col">Accion</th>
+     </thead>
+   </tr>
+   <% @products.each do |product| %>
+   <tr>
+     <td><%= product.name %></td>
+     <td><%= product.price %></td>
+     <td><%= product.description %></td>
+     <td><%= product.characteristic %></td>
+     <td><%= product.mark %></td>
+     <td><%= product.kind %></td>
+     <td><%= product.discount %></td>
+     <td><%= product.reference %></td>
+     <td><%= image_tag(product.avatar_url) if product.avatar? height: 30px %> <%= link_to "Ver foto", product %></td>
+     <td></td>
+
+     <td>
+       <%= link_to "Editar", edit_product_path(product)%>
+       <%= link_to "Eliminar", product, method: :delete, data: {confirm: "Desea eliminar este producto?"} %>
+
+     </td>
+   </tr>
+   <% end %>
+ </table>
+
+ <%= link_to "Crear nuevo producto", new_product_path %>
+
+):
+1:    <h1>Productos</h1>
+2:    <hr>
+3:     <table class="table table-dark table-striped">
+4:       <tr>
+5:         <thead class="table-dark">
+6:           <th scope="col">Nombre</th>
+7:           <th scope="col">Precio</th>
+8:           <th scope="col">Descripcion</th>
+9:           <th scope="col">Caracteristica</th>
+10:           <th scope="col">Marca</th>
+11:           <th scope="col">Tipo</th>
+12:           <th scope="col">Descuento</th>
+13:           <th scope="col">Referencia</th>
+14:           <th scope="col">Fotos</th>
+15:           <th scope="col">Accion</th>
+16:         </thead>
+17:       </tr>
+18:       <% @products.each do |product| %>
+19:       <tr>
+20:         <td><%= product.name %></td>
+21:         <td><%= product.price %></td>
+22:         <td><%= product.description %></td>
+23:         <td><%= product.characteristic %></td>
+24:         <td><%= product.mark %></td>
+25:         <td><%= product.kind %></td>
+26:         <td><%= product.discount %></td>
+27:         <td><%= product.reference %></td>
+28:         <td><%= image_tag(product.avatar_url) if product.avatar? height: 30px %> <%= link_to "Ver foto", product %></td>
+29:         <td></td>
+30:    
+31:         <td>
+32:           <%= link_to "Editar", edit_product_path(product)%>
+33:           <%= link_to "Eliminar", product, method: :delete, data: {confirm: "Desea eliminar este producto?"} %>
+34:    
+35:         </td>
+36:       </tr>
+37:       <% end %>
+38:     </table>
+39:    
+40:     <%= link_to "Crear nuevo producto", new_product_path %>
+  
+app/views/products/index.html.erb:28: syntax error, unexpected local variable or method, expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected local variable or method, expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected local variable or method, expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected local variable or method, expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected local variable or method, expecting ')'
+app/views/products/index.html.erb:28: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/products" for 127.0.0.1 at 2021-10-03 22:54:49 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1707)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 5791)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.2ms | Allocations: 7282)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2021-10-03 22:54:52 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:2
+  Rendered products/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1469)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 5098)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.2ms | Allocations: 5754)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2021-10-03 22:55:00 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:2
+  Rendered products/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 861)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 4347)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.2ms | Allocations: 4808)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2021-10-03 22:55:41 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1466)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1540)
+Completed 500 Internal Server Error in 6ms (Allocations: 3440)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: 
+    2: <% @products.each do |product| %>
+    3: <%= image_tag(product.avatar_url) if product.avatar? %>
+    4: <% end %>
+  
+app/views/products/show.html.erb:2
+Started GET "/products" for 127.0.0.1 at 2021-10-03 22:55:54 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/index.html.erb:18
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 24.3ms | Allocations: 9379)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 14108)
+Completed 200 OK in 39ms (Views: 36.7ms | ActiveRecord: 2.2ms | Allocations: 15593)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-03 22:55:56 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4637)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 5148)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2021-10-03 22:55:57 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1134)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1203)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1755)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<% @product do |product| %>
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    <% @product do |product| %>
+3:    <%= image_tag(product.avatar_url) if product.avatar? %>
+4:    <% end %>
+  
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products" for 127.0.0.1 at 2021-10-03 22:56:00 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 5159)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms | Allocations: 5629)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 22:56:01 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1120)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1189)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1611)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<% @product do |product| %>
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    <% @product do |product| %>
+3:    <%= image_tag(product.avatar_url) if product.avatar? %>
+4:    <% end %>
+  
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 22:56:41 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1118)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1193)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 1.2ms | Allocations: 12202)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<% @product do |product| %>
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    <% @product do |product| %>
+3:    <%= image_tag(product.avatar_url) if product.avatar? %>
+4:    <% end %>
+  
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 22:58:39 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1173)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1248)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms | Allocations: 3317)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<% @product do |product| %>
+<%= image_tag(product.avatar_url) %>
+<% end %>
+
+):
+1:    
+2:    <% @product do |product| %>
+3:    <%= image_tag(product.avatar_url) %>
+4:    <% end %>
+  
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 22:58:50 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 4614)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4688)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms | Allocations: 6750)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x0000000000fdc0>
+Did you mean?  @product):
+    1: 
+    2: 
+    3: <%= image_tag(product.avatar_url) %>
+  
+app/views/products/show.html.erb:3
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 22:58:52 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 4432)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4500)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms | Allocations: 5594)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<ActionView::Base:0x000000000101a8>
+Did you mean?  @product):
+    1: 
+    2: 
+    3: <%= image_tag(product.avatar_url) %>
+  
+app/views/products/show.html.erb:3
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 23:01:47 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1173)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1248)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 3177)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<% @product do |product| %>
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    <% @product do |product| %>
+3:    <%= image_tag(product.avatar_url) if product.avatar? %>
+4:    <% end %>
+  
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 23:01:54 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1118)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1193)
+Completed 500 Internal Server Error in 4ms (Allocations: 3090)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<% @product do |product| %>
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    <% @product do |product| %>
+3:    <%= image_tag(product.avatar_url) if product.avatar? %>
+4:    <% end %>
+  
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 23:01:57 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1120)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1189)
+Completed 500 Internal Server Error in 2ms (Allocations: 1671)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<% @product do |product| %>
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    <% @product do |product| %>
+3:    <%= image_tag(product.avatar_url) if product.avatar? %>
+4:    <% end %>
+  
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products/" for 127.0.0.1 at 2021-10-03 23:02:11 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/index.html.erb:18
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 9278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 13971)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 1.0ms | Allocations: 14563)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 23:02:13 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1120)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1189)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1612)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<% @product do |product| %>
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    <% @product do |product| %>
+3:    <%= image_tag(product.avatar_url) if product.avatar? %>
+4:    <% end %>
+  
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products/" for 127.0.0.1 at 2021-10-03 23:02:15 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 4651)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.2ms | Allocations: 5110)
+
+
+Started GET "/products/" for 127.0.0.1 at 2021-10-03 23:02:30 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 5774)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.1ms | Allocations: 7201)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 23:02:32 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1136)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1207)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1904)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<% @products do |product| %>
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    <% @products do |product| %>
+3:    <%= image_tag(product.avatar_url) if product.avatar? %>
+4:    <% end %>
+  
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products/" for 127.0.0.1 at 2021-10-03 23:02:35 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4654)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.2ms | Allocations: 5113)
+
+
+Started GET "/products/" for 127.0.0.1 at 2021-10-03 23:02:49 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/index.html.erb:18
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 9026)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 13330)
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 1.2ms | Allocations: 15266)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 23:02:51 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1145)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1214)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1695)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<% @products do |product| %>
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    <% @products do |product| %>
+3:    <%= image_tag(product.avatar_url) if product.avatar? %>
+4:    <% end %>
+  
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 23:03:39 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1173)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1248)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2637)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<% @products do |product| %>
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    <% @products do |product| %>
+3:    <%= image_tag(product.avatar_url) if product.avatar? %>
+4:    <% end %>
+  
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products" for 127.0.0.1 at 2021-10-03 23:03:41 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1853)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 5893)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.2ms | Allocations: 6550)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-03 23:03:41 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4758)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.2ms | Allocations: 5216)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 23:04:25 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1120)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1189)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1612)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<% @products do |product| %>
+<%= image_tag(product.avatar_url) if product.avatar? %>
+<% end %>
+
+):
+1:    
+2:    <% @products do |product| %>
+3:    <%= image_tag(product.avatar_url) if product.avatar? %>
+4:    <% end %>
+  
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+app/views/products/show.html.erb:2: syntax error, unexpected `do', expecting `end'
+app/views/products/show.html.erb:6: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products" for 127.0.0.1 at 2021-10-03 23:04:27 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1312)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4773)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms | Allocations: 5231)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-03 23:04:53 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1871)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 5932)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.1ms | Allocations: 7358)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 23:04:55 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:2
+  Rendered products/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1406)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 5051)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.2ms | Allocations: 5692)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-03 23:05:08 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 5774)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.2ms | Allocations: 7201)
+
+
+Started GET "/products/16" for 127.0.0.1 at 2021-10-03 23:05:09 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/show.html.erb:2
+  Rendered products/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1098)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4599)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 5270)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-03 23:05:13 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2423)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 5934)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.1ms | Allocations: 7242)
+
+

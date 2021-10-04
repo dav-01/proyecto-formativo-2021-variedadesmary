@@ -1,21 +1,15 @@
 <% @products.each do |product| %>
 
 <div class="flex-container">
+
   <div class="flex-item">
-    <%= image_tag "sueter.png", height: "80%", width: "100%" %>
+
+    <%= image_tag "camisa.jpg", height: "80%", width: "100%" %>
     <h3><%= product.name %></h3>
     <p><%= product.price%></p>
 
   </div>
-<div class="flex-item">
 
-  </div>
-  <div class="flex-item">
-
-  </div>
-  <div class="flex-item">
-
-  </div>
 </div>
 
 <% end %>
