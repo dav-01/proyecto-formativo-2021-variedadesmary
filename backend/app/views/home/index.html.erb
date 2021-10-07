@@ -1,10 +1,10 @@
+
 <% @products.each do |product| %>
 
 <div class="flex-container">
 
   <div class="flex-item">
-
-    <%= image_tag "camisa.jpg", height: "80%", width: "100%" %>
+    <%= image_tag(product.avatar_url) if product.avatar? %>
     <h3><%= product.name %></h3>
     <p><%= product.price%></p>
 

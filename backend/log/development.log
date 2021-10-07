@@ -43153,3 +43153,1789 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.1ms | Allocations: 7242)
 
 
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:22:14 -0500
+  [1m[35m (87.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (41.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 1300.8ms | Allocations: 14432)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1884.2ms | Allocations: 19609)
+Completed 200 OK in 2314ms (Views: 1993.3ms | ActiveRecord: 42.7ms | Allocations: 25176)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:25:00 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2723)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 6648)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.2ms | Allocations: 8234)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:25:01 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 27.0ms | Allocations: 2127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 84.2ms | Allocations: 5501)
+Completed 200 OK in 86ms (Views: 84.9ms | ActiveRecord: 0.2ms | Allocations: 6015)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:25:10 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1212)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 5324)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.2ms | Allocations: 6757)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-05 14:25:21 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1849)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 6291)
+Completed 200 OK in 33ms (Views: 28.2ms | ActiveRecord: 0.2ms | Allocations: 7616)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-05 14:25:26 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 4637)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 5151)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2021-10-05 14:25:28 -0500
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (Duration: 310.7ms | Allocations: 24624)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 316.0ms | Allocations: 28132)
+Completed 200 OK in 319ms (Views: 316.8ms | ActiveRecord: 0.0ms | Allocations: 28831)
+
+
+Started POST "/products" for 127.0.0.1 at 2021-10-05 14:26:02 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "product"=>{"name"=>"Sueter", "price"=>"30000", "description"=>"sueter nuevo", "characteristic"=>"", "mark"=>"", "kind"=>"", "discount"=>"", "reference"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007f8bf80f8170 @tempfile=#<Tempfile:/tmp/RackMultipart20211005-73708-upfvni.png>, @original_filename="sueter.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[avatar]\"; filename=\"sueter.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Crear producto"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mProduct Create (52.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "price", "description", "characteristic", "mark", "kind", "reference", "created_at", "updated_at", "avatar") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sueter"], ["price", 30000], ["description", "sueter nuevo"], ["characteristic", ""], ["mark", ""], ["kind", ""], ["reference", ""], ["created_at", "2021-10-05 19:26:02.898442"], ["updated_at", "2021-10-05 19:26:02.898442"], ["avatar", "sueter.png"]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (120.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+Redirected to http://127.0.0.1:3000/products
+Completed 302 Found in 259ms (ActiveRecord: 173.5ms | Allocations: 7510)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-05 14:26:03 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1368)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 4948)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.3ms | Allocations: 5451)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:26:06 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 990)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4903)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.2ms | Allocations: 5398)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:29:15 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 982)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 346.4ms | Allocations: 36425)
+Completed 200 OK in 348ms (Views: 347.2ms | ActiveRecord: 0.2ms | Allocations: 36883)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:29:16 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 985)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 4452)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.2ms | Allocations: 4912)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:33:42 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:42
+  Rendered home/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1372)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 6017)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.3ms | Allocations: 7486)
+
+
+Started GET "/..." for 127.0.0.1 at 2021-10-05 14:33:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:34:34 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1489)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 5592)
+Completed 200 OK in 27ms (Views: 23.9ms | ActiveRecord: 0.2ms | Allocations: 7081)
+
+
+Started GET "/..." for 127.0.0.1 at 2021-10-05 14:34:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/products" for 127.0.0.1 at 2021-10-05 14:34:43 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1826)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 6329)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.2ms | Allocations: 7529)
+
+
+Started GET "/..." for 127.0.0.1 at 2021-10-05 14:34:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started DELETE "/products/4" for 127.0.0.1 at 2021-10-05 14:34:48 -0500
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:40:in `destroy'
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/products_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (286.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:40:in `destroy'
+Redirected to http://127.0.0.1:3000/products
+Completed 302 Found in 329ms (ActiveRecord: 287.0ms | Allocations: 8206)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-05 14:34:48 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1230)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4824)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 5363)
+
+
+Started DELETE "/products/14" for 127.0.0.1 at 2021-10-05 14:34:50 -0500
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"14"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:40:in `destroy'
+  [1m[36mProduct Destroy (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 14]]
+  ↳ app/controllers/products_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (99.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:40:in `destroy'
+Redirected to http://127.0.0.1:3000/products
+Completed 302 Found in 112ms (ActiveRecord: 100.2ms | Allocations: 5179)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-05 14:34:50 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1072)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4520)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 1.0ms | Allocations: 4979)
+
+
+Started DELETE "/products/15" for 127.0.0.1 at 2021-10-05 14:34:53 -0500
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"15"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:40:in `destroy'
+  [1m[36mProduct Destroy (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 15]]
+  ↳ app/controllers/products_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (83.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:40:in `destroy'
+Redirected to http://127.0.0.1:3000/products
+Completed 302 Found in 98ms (ActiveRecord: 84.2ms | Allocations: 4802)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-05 14:34:53 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4398)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 4856)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-05 14:34:54 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 4398)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 4859)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:34:56 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1573)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 5028)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.2ms | Allocations: 5492)
+
+
+Started GET "/..." for 127.0.0.1 at 2021-10-05 14:34:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:35:26 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1313)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1388)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2792)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @products do |product| %>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag(product.avatar_url) if product.avatar? %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<% end %>
+
+<% @products.each do |product| %>
+
+<div class="flex-container">
+
+  <div class="flex-item">
+    <%= image_tag(product.avatar_url) if product.avatar? %>
+    <h3><%= product.name %></h3>
+    <p><%= product.price%></p>
+
+  </div>
+
+</div>
+
+<% end %>
+
+):
+1:    <% @products do |product| %>
+2:    
+3:    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+4:      <div class="carousel-indicators">
+5:        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+6:        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+7:        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+8:      </div>
+9:      <div class="carousel-inner">
+10:        <div class="carousel-item active">
+11:          <%= image_tag(product.avatar_url) if product.avatar? %>
+12:          <div class="carousel-caption d-none d-md-block">
+13:            <h5>First slide label</h5>
+14:            <p>Some representative placeholder content for the first slide.</p>
+15:          </div>
+16:        </div>
+17:        <div class="carousel-item">
+18:          <img src="..." class="d-block w-100" alt="...">
+19:          <div class="carousel-caption d-none d-md-block">
+20:            <h5>Second slide label</h5>
+21:            <p>Some representative placeholder content for the second slide.</p>
+22:          </div>
+23:        </div>
+24:        <div class="carousel-item">
+25:          <img src="..." class="d-block w-100" alt="...">
+26:          <div class="carousel-caption d-none d-md-block">
+27:            <h5>Third slide label</h5>
+28:            <p>Some representative placeholder content for the third slide.</p>
+29:          </div>
+30:        </div>
+31:      </div>
+32:      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+33:        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+34:        <span class="visually-hidden">Previous</span>
+35:      </button>
+36:      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+37:        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+38:        <span class="visually-hidden">Next</span>
+39:      </button>
+40:    </div>
+41:    
+42:    <% end %>
+43:    
+44:    <% @products.each do |product| %>
+45:    
+46:    <div class="flex-container">
+47:    
+48:      <div class="flex-item">
+49:        <%= image_tag(product.avatar_url) if product.avatar? %>
+50:        <h3><%= product.name %></h3>
+51:        <p><%= product.price%></p>
+52:    
+53:      </div>
+54:    
+55:    </div>
+56:    
+57:    <% end %>
+  
+app/views/home/index.html.erb:1: syntax error, unexpected `do', expecting `end'
+app/views/home/index.html.erb:59: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:1: syntax error, unexpected `do', expecting `end'
+app/views/home/index.html.erb:59: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:1: syntax error, unexpected `do', expecting `end'
+app/views/home/index.html.erb:59: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:1: syntax error, unexpected `do', expecting `end'
+app/views/home/index.html.erb:59: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:1: syntax error, unexpected `do', expecting `end'
+app/views/home/index.html.erb:59: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:1: syntax error, unexpected `do', expecting `end'
+app/views/home/index.html.erb:59: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:35:38 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1296)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1371)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2824)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @product do |product| %>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag(product.avatar_url) if product.avatar? %>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<% end %>
+
+<% @products.each do |product| %>
+
+<div class="flex-container">
+
+  <div class="flex-item">
+    <%= image_tag(product.avatar_url) if product.avatar? %>
+    <h3><%= product.name %></h3>
+    <p><%= product.price%></p>
+
+  </div>
+
+</div>
+
+<% end %>
+
+):
+1:    <% @product do |product| %>
+2:    
+3:    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+4:      <div class="carousel-indicators">
+5:        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+6:        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+7:        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+8:      </div>
+9:      <div class="carousel-inner">
+10:        <div class="carousel-item active">
+11:          <%= image_tag(product.avatar_url) if product.avatar? %>
+12:          <div class="carousel-caption d-none d-md-block">
+13:            <h5>First slide label</h5>
+14:            <p>Some representative placeholder content for the first slide.</p>
+15:          </div>
+16:        </div>
+17:        <div class="carousel-item">
+18:          <img src="..." class="d-block w-100" alt="...">
+19:          <div class="carousel-caption d-none d-md-block">
+20:            <h5>Second slide label</h5>
+21:            <p>Some representative placeholder content for the second slide.</p>
+22:          </div>
+23:        </div>
+24:        <div class="carousel-item">
+25:          <img src="..." class="d-block w-100" alt="...">
+26:          <div class="carousel-caption d-none d-md-block">
+27:            <h5>Third slide label</h5>
+28:            <p>Some representative placeholder content for the third slide.</p>
+29:          </div>
+30:        </div>
+31:      </div>
+32:      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+33:        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+34:        <span class="visually-hidden">Previous</span>
+35:      </button>
+36:      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+37:        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+38:        <span class="visually-hidden">Next</span>
+39:      </button>
+40:    </div>
+41:    
+42:    <% end %>
+43:    
+44:    <% @products.each do |product| %>
+45:    
+46:    <div class="flex-container">
+47:    
+48:      <div class="flex-item">
+49:        <%= image_tag(product.avatar_url) if product.avatar? %>
+50:        <h3><%= product.name %></h3>
+51:        <p><%= product.price%></p>
+52:    
+53:      </div>
+54:    
+55:    </div>
+56:    
+57:    <% end %>
+  
+app/views/home/index.html.erb:1: syntax error, unexpected `do', expecting `end'
+app/views/home/index.html.erb:59: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:1: syntax error, unexpected `do', expecting `end'
+app/views/home/index.html.erb:59: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:1: syntax error, unexpected `do', expecting `end'
+app/views/home/index.html.erb:59: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:1: syntax error, unexpected `do', expecting `end'
+app/views/home/index.html.erb:59: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:1: syntax error, unexpected `do', expecting `end'
+app/views/home/index.html.erb:59: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:1: syntax error, unexpected `do', expecting `end'
+app/views/home/index.html.erb:59: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:36:19 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:42
+  Rendered home/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 5380)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.2ms | Allocations: 6870)
+
+
+Started GET "/..." for 127.0.0.1 at 2021-10-05 14:36:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:37:13 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:42
+  Rendered home/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 887)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.9ms | Allocations: 19876)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.2ms | Allocations: 20357)
+
+
+Started GET "/..." for 127.0.0.1 at 2021-10-05 14:37:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:37:26 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:42
+  Rendered home/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 889)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 81.0ms | Allocations: 20599)
+Completed 200 OK in 83ms (Views: 81.7ms | ActiveRecord: 0.1ms | Allocations: 21057)
+
+
+Started GET "/..." for 127.0.0.1 at 2021-10-05 14:37:26 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:41:55 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1309)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 5412)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.2ms | Allocations: 6838)
+
+
+Started GET "/..." for 127.0.0.1 at 2021-10-05 14:41:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:43:12 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1303)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 5418)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.1ms | Allocations: 6867)
+
+
+Started GET "/..." for 127.0.0.1 at 2021-10-05 14:43:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:43:26 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1293)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 5396)
+Completed 200 OK in 40ms (Views: 34.3ms | ActiveRecord: 2.8ms | Allocations: 6839)
+
+
+Started GET "/..." for 127.0.0.1 at 2021-10-05 14:43:26 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:44:15 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 5393)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.1ms | Allocations: 6842)
+
+
+Started GET "/..." for 127.0.0.1 at 2021-10-05 14:44:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:45:17 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1270)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 5384)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.1ms | Allocations: 6829)
+
+
+Started GET "/..." for 127.0.0.1 at 2021-10-05 14:45:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:45:18 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:1
+  Rendered home/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 890)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4357)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 4838)
+
+
+Started GET "/..." for 127.0.0.1 at 2021-10-05 14:45:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:46:41 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (Duration: 20.4ms | Allocations: 8876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 13817)
+Completed 200 OK in 38ms (Views: 33.8ms | ActiveRecord: 2.1ms | Allocations: 16532)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:47:26 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 4913)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 6397)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:47:36 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 230)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 4354)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 5841)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:53:15 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 213)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 4337)
+Completed 200 OK in 16ms (Views: 13.7ms | Allocations: 5816)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-05 14:53:52 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1996)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 6107)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.7ms | Allocations: 7584)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-07 09:40:09 -0500
+  [1m[35m (88.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (53.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (Duration: 124.8ms | Allocations: 9319)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1014.7ms | Allocations: 18936)
+Completed 200 OK in 1410ms (Views: 1042.2ms | ActiveRecord: 54.2ms | Allocations: 24496)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 09:40:19 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 1606)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 5270)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.2ms | Allocations: 6778)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 09:40:20 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (14.3ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 38.6ms | Allocations: 5310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 9035)
+Completed 200 OK in 52ms (Views: 34.5ms | ActiveRecord: 14.9ms | Allocations: 10758)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 09:40:22 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.1ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 883)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4343)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.1ms | Allocations: 4869)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 09:40:23 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 4334)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 4805)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 09:40:24 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.3ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 4324)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.3ms | Allocations: 4785)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 09:40:25 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4334)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 4805)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 09:40:26 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.1ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4324)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.1ms | Allocations: 4785)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 09:40:27 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4324)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.2ms | Allocations: 4785)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 09:40:28 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4324)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms | Allocations: 4785)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 09:40:28 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4324)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 4785)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 09:40:29 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 4324)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.2ms | Allocations: 4785)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 09:40:30 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4324)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 4785)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 09:40:33 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.1ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4324)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.1ms | Allocations: 4785)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-10-07 09:40:34 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 11.6ms | Allocations: 686)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 229.7ms | Allocations: 5493)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 236.9ms | Allocations: 9290)
+Completed 200 OK in 300ms (Views: 239.9ms | ActiveRecord: 0.6ms | Allocations: 18595)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-10-07 09:40:37 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 6.6ms | Allocations: 235)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 157)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 28.6ms | Allocations: 2052)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 5716)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.0ms | Allocations: 7534)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-10-07 09:40:39 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 533)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-07 09:40:39 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 995)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 4470)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.2ms | Allocations: 4959)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-10-07 09:40:44 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 154)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1033)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4520)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 5244)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-10-07 10:44:34 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Iniciar sesion"}
+Completed 401 Unauthorized in 1ms (Allocations: 483)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Iniciar sesion"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 154)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 4515)
+Completed 200 OK in 20ms (Views: 18.5ms | Allocations: 5163)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-10-07 10:44:34 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Iniciar sesion"}
+Completed 401 Unauthorized in 1ms (Allocations: 376)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Iniciar sesion"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 154)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1020)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 4499)
+Completed 200 OK in 19ms (Views: 15.4ms | Allocations: 5083)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-10-07 10:44:34 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Iniciar sesion"}
+Completed 401 Unauthorized in 1ms (Allocations: 376)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Iniciar sesion"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 154)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1020)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 4499)
+Completed 200 OK in 15ms (Views: 14.4ms | Allocations: 5083)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-10-07 10:45:02 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 154)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1029)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4491)
+Completed 200 OK in 12ms (Views: 10.6ms | Allocations: 5166)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-10-07 11:09:23 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 154)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1029)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 4491)
+Completed 200 OK in 18ms (Views: 16.6ms | Allocations: 5166)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-10-07 11:09:25 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 154)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1029)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 4491)
+Completed 200 OK in 20ms (Views: 18.7ms | Allocations: 5166)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-10-07 11:09:26 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 154)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1029)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4491)
+Completed 200 OK in 15ms (Views: 12.8ms | Allocations: 5166)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-10-07 11:10:19 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 154)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1029)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4491)
+Completed 200 OK in 14ms (Views: 12.1ms | Allocations: 5166)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-10-07 12:49:39 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 155)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.1ms | Allocations: 1030)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 4512)
+Completed 200 OK in 26ms (Views: 24.8ms | Allocations: 5185)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 12:49:40 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/index.html.erb:18
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1749)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 5809)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.8ms | Allocations: 6272)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 12:49:41 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 897)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4396)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 4861)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 12:49:42 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 4993)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.2ms | Allocations: 5454)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 12:49:51 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 4398)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.2ms | Allocations: 4859)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-07 12:49:52 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1344)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 4930)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.1ms | Allocations: 5391)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 12:49:53 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 4332)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.2ms | Allocations: 4825)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 12:49:55 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.4ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 4324)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.4ms | Allocations: 4785)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 12:50:23 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 4324)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.2ms | Allocations: 4785)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 12:50:25 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4324)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.2ms | Allocations: 4785)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 12:54:44 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 4989)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.2ms | Allocations: 5450)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-07 12:54:54 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 2077)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 5761)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.1ms | Allocations: 6222)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 12:54:55 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4398)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.1ms | Allocations: 4859)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2021-10-07 12:58:17 -0500
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (Duration: 536.7ms | Allocations: 24024)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 545.2ms | Allocations: 28254)
+Completed 200 OK in 552ms (Views: 548.7ms | ActiveRecord: 0.0ms | Allocations: 30338)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2021-10-07 13:00:37 -0500
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (Duration: 51.0ms | Allocations: 3967)
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 4051)
+Completed 500 Internal Server Error in 56ms (Allocations: 5566)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- <form class="" action="index.html" method="post">
+  <div class="col-md-4">
+    <label for="validationTooltip01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+    <div class="valid-tooltip">
+
+    </div>
+  </div>
+</form> -->
+
+<div class="form_products">
+  <h1>Crear nuevo producto</h1>
+  <%= simple_form_for @product do |f| %>
+    <%= f.input :name, label: 'Nombre' %>
+    <%= f.input :price, label: 'Precio' %>
+    <%= f.input :description, label: 'Descripcion', as: :text %>
+    <%= f.input :characteristic, label: 'Caracteristica' %>
+    <%= f.input :mark, label: 'Marca' %>
+    <%= f.input :kind, label: 'Tipo' %>
+    <%= f.input :discount, label: 'Descuento' %>
+    <%= f.input :reference, label: 'Referencia' %>
+    <%= f.input :avatar, label: 'Fotos' %>
+    <div class="boton_enviar">
+      <%= f.button :submit, "Crear producto", link_to "Mostrar"%>
+    </div>
+
+  <% end %>
+</div>
+
+):
+1:    <!-- <form class="" action="index.html" method="post">
+2:      <div class="col-md-4">
+3:        <label for="validationTooltip01" class="form-label">First name</label>
+4:        <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+5:        <div class="valid-tooltip">
+6:    
+7:        </div>
+8:      </div>
+9:    </form> -->
+10:    
+11:    <div class="form_products">
+12:      <h1>Crear nuevo producto</h1>
+13:      <%= simple_form_for @product do |f| %>
+14:        <%= f.input :name, label: 'Nombre' %>
+15:        <%= f.input :price, label: 'Precio' %>
+16:        <%= f.input :description, label: 'Descripcion', as: :text %>
+17:        <%= f.input :characteristic, label: 'Caracteristica' %>
+18:        <%= f.input :mark, label: 'Marca' %>
+19:        <%= f.input :kind, label: 'Tipo' %>
+20:        <%= f.input :discount, label: 'Descuento' %>
+21:        <%= f.input :reference, label: 'Referencia' %>
+22:        <%= f.input :avatar, label: 'Fotos' %>
+23:        <div class="boton_enviar">
+24:          <%= f.button :submit, "Crear producto", link_to "Mostrar"%>
+25:        </div>
+26:    
+27:      <% end %>
+28:    </div>
+  
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+Started GET "/products" for 127.0.0.1 at 2021-10-07 13:00:42 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/index.html.erb:18
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2183)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 6240)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.8ms | Allocations: 6914)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2021-10-07 13:00:44 -0500
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1315)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1384)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1828)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- <form class="" action="index.html" method="post">
+  <div class="col-md-4">
+    <label for="validationTooltip01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+    <div class="valid-tooltip">
+
+    </div>
+  </div>
+</form> -->
+
+<div class="form_products">
+  <h1>Crear nuevo producto</h1>
+  <%= simple_form_for @product do |f| %>
+    <%= f.input :name, label: 'Nombre' %>
+    <%= f.input :price, label: 'Precio' %>
+    <%= f.input :description, label: 'Descripcion', as: :text %>
+    <%= f.input :characteristic, label: 'Caracteristica' %>
+    <%= f.input :mark, label: 'Marca' %>
+    <%= f.input :kind, label: 'Tipo' %>
+    <%= f.input :discount, label: 'Descuento' %>
+    <%= f.input :reference, label: 'Referencia' %>
+    <%= f.input :avatar, label: 'Fotos' %>
+    <div class="boton_enviar">
+      <%= f.button :submit, "Crear producto", link_to "Mostrar"%>
+    </div>
+
+  <% end %>
+</div>
+
+):
+1:    <!-- <form class="" action="index.html" method="post">
+2:      <div class="col-md-4">
+3:        <label for="validationTooltip01" class="form-label">First name</label>
+4:        <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+5:        <div class="valid-tooltip">
+6:    
+7:        </div>
+8:      </div>
+9:    </form> -->
+10:    
+11:    <div class="form_products">
+12:      <h1>Crear nuevo producto</h1>
+13:      <%= simple_form_for @product do |f| %>
+14:        <%= f.input :name, label: 'Nombre' %>
+15:        <%= f.input :price, label: 'Precio' %>
+16:        <%= f.input :description, label: 'Descripcion', as: :text %>
+17:        <%= f.input :characteristic, label: 'Caracteristica' %>
+18:        <%= f.input :mark, label: 'Marca' %>
+19:        <%= f.input :kind, label: 'Tipo' %>
+20:        <%= f.input :discount, label: 'Descuento' %>
+21:        <%= f.input :reference, label: 'Referencia' %>
+22:        <%= f.input :avatar, label: 'Fotos' %>
+23:        <div class="boton_enviar">
+24:          <%= f.button :submit, "Crear producto", link_to "Mostrar"%>
+25:        </div>
+26:    
+27:      <% end %>
+28:    </div>
+  
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+Started GET "/products" for 127.0.0.1 at 2021-10-07 13:00:47 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 951)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 4419)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms | Allocations: 4878)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 13:01:08 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1464)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 5535)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.2ms | Allocations: 6961)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 13:01:09 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4398)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.2ms | Allocations: 4910)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 13:01:10 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4398)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.1ms | Allocations: 4856)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 13:01:10 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4398)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 4856)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2021-10-07 13:01:11 -0500
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1324)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1393)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1962)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- <form class="" action="index.html" method="post">
+  <div class="col-md-4">
+    <label for="validationTooltip01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+    <div class="valid-tooltip">
+
+    </div>
+  </div>
+</form> -->
+
+<div class="form_products">
+  <h1>Crear nuevo producto</h1>
+  <%= simple_form_for @product do |f| %>
+    <%= f.input :name, label: 'Nombre' %>
+    <%= f.input :price, label: 'Precio' %>
+    <%= f.input :description, label: 'Descripcion', as: :text %>
+    <%= f.input :characteristic, label: 'Caracteristica' %>
+    <%= f.input :mark, label: 'Marca' %>
+    <%= f.input :kind, label: 'Tipo' %>
+    <%= f.input :discount, label: 'Descuento' %>
+    <%= f.input :reference, label: 'Referencia' %>
+    <%= f.input :avatar, label: 'Fotos' %>
+    <div class="boton_enviar">
+      <%= f.button :submit, "Crear producto", link_to "Editar", edit_product_path(product)%>
+    </div>
+
+  <% end %>
+</div>
+
+):
+1:    <!-- <form class="" action="index.html" method="post">
+2:      <div class="col-md-4">
+3:        <label for="validationTooltip01" class="form-label">First name</label>
+4:        <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+5:        <div class="valid-tooltip">
+6:    
+7:        </div>
+8:      </div>
+9:    </form> -->
+10:    
+11:    <div class="form_products">
+12:      <h1>Crear nuevo producto</h1>
+13:      <%= simple_form_for @product do |f| %>
+14:        <%= f.input :name, label: 'Nombre' %>
+15:        <%= f.input :price, label: 'Precio' %>
+16:        <%= f.input :description, label: 'Descripcion', as: :text %>
+17:        <%= f.input :characteristic, label: 'Caracteristica' %>
+18:        <%= f.input :mark, label: 'Marca' %>
+19:        <%= f.input :kind, label: 'Tipo' %>
+20:        <%= f.input :discount, label: 'Descuento' %>
+21:        <%= f.input :reference, label: 'Referencia' %>
+22:        <%= f.input :avatar, label: 'Fotos' %>
+23:        <div class="boton_enviar">
+24:          <%= f.button :submit, "Crear producto", link_to "Editar", edit_product_path(product)%>
+25:        </div>
+26:    
+27:      <% end %>
+28:    </div>
+  
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected ',', expecting ')'
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected ',', expecting ')'
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected ',', expecting ')'
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected ',', expecting ')'
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected ',', expecting ')'
+app/views/products/new.html.erb:24: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/products/new.html.erb:24: syntax error, unexpected ',', expecting ')'
+Started GET "/products/new" for 127.0.0.1 at 2021-10-07 13:01:26 -0500
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (Duration: 20.6ms | Allocations: 13098)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 17069)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.0ms | Allocations: 18516)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 13:21:00 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/index.html.erb:18
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2561)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 6169)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.7ms | Allocations: 6807)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 13:21:04 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4398)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 4860)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 13:21:07 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 4398)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.2ms | Allocations: 4859)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 13:21:08 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 4398)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.3ms | Allocations: 4856)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 13:21:09 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1334)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 5809)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.2ms | Allocations: 6983)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 13:21:10 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 4398)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms | Allocations: 4913)
+
+
+Started GET "/products/show" for 127.0.0.1 at 2021-10-07 13:21:24 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3592)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 4193)
+
+
+Started GET "/products/show" for 127.0.0.1 at 2021-10-07 13:22:49 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 4308)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 5744)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 13:22:50 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1369)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 5406)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.2ms | Allocations: 6048)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 13:22:51 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 4398)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.1ms | Allocations: 4859)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 13:22:52 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1311)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 5787)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.2ms | Allocations: 6962)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 13:22:53 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4332)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.2ms | Allocations: 4847)
+
+
+Started GET "/products" for 127.0.0.1 at 2021-10-07 13:22:53 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:18
+  Rendered products/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 4398)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.2ms | Allocations: 4861)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 13:22:54 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 4324)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.2ms | Allocations: 4785)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 13:23:09 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.2ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4324)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.2ms | Allocations: 4785)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2021-10-07 13:23:10 -0500
+Processing by SuppliersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering suppliers/index.html.erb within layouts/application
+  [1m[36mSupplier Load (0.4ms)[0m  [1m[34mSELECT "suppliers".* FROM "suppliers"[0m
+  ↳ app/views/suppliers/index.html.erb:14
+  Rendered suppliers/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 4324)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.4ms | Allocations: 4785)
+
+
