@@ -2,14 +2,24 @@
 
 one:
   code_supplier: 1
+  id_person: 1
+  nit_company: 1
   name: MyString
+  last_name: MyString
+  kind: MyString
+  sex: MyString
   email: MyString
   telephone: 1
   address: MyString
 
 two:
   code_supplier: 1
+  id_person: 1
+  nit_company: 1
   name: MyString
+  last_name: MyString
+  kind: MyString
+  sex: MyString
   email: MyString
   telephone: 1
   address: MyString

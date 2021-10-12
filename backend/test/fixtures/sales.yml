@@ -8,7 +8,7 @@ one:
   kind: MyString
   way_to_pay: MyString
   amount: 1
-  date: 2021-09-15
+  date: 2021-10-12
 
 two:
   code_sale: 1
@@ -18,4 +18,4 @@ two:
   kind: MyString
   way_to_pay: MyString
   amount: 1
-  date: 2021-09-15
+  date: 2021-10-12
