@@ -9,7 +9,7 @@ class SuppliersController < ApplicationController
   end
 
   def show
-
+    @supplier = Supplier.find(params[:id])
   end
 
   def create
@@ -44,7 +44,6 @@ class SuppliersController < ApplicationController
   private
 
   def supplier_params
-    params.require(:supplier).permit(:code_suppliers, :id_person, :nit_company, :name, :last_name, :kind, :sex, :email, :telephone, :address)
+    params.require(:supplier).permit(:code_suppliers, :id_person, :nit_company, :name, :last_name, :kind, :sex, :email, :telephone, :address, :photo)
   end
-
 end

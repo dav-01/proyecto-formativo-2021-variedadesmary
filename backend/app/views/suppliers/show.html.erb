@@ -1,2 +1,7 @@
-<h1>Suppliers#show</h1>
-<p>Find me in app/views/suppliers/show.html.erb</p>
+
+<% @supplier do |supplier| %>
+
+<%= image_tag(supplier.photo_url) if supplier.photo? %>
+
+<% end %>
+<% end %>
