@@ -1,2 +1,0 @@
-class Pqr < ApplicationRecord
-end
