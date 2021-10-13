@@ -10,18 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_30_192021) do
+ActiveRecord::Schema.define(version: 2021_10_12_225701) do
 
-  create_table "claims", force: :cascade do |t|
-    t.integer "code_sale"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "companies", force: :cascade do |t|
-    t.integer "nit_company"
-    t.string "logo"
-    t.string "kind"
+  create_table "categories", force: :cascade do |t|
+    t.string "person"
+    t.string "company"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -67,23 +60,16 @@ ActiveRecord::Schema.define(version: 2021_09_30_192021) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "people", force: :cascade do |t|
-    t.integer "id_person"
-    t.string "last_name"
-    t.string "sex"
-    t.string "photo"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "pqrs", force: :cascade do |t|
     t.integer "code_pqr"
     t.integer "code_customer"
+    t.string "code_sale"
     t.string "kind"
     t.string "description"
     t.string "state"
     t.string "reference"
     t.date "date"
+    t.string "code_kind"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -98,11 +84,9 @@ ActiveRecord::Schema.define(version: 2021_09_30_192021) do
     t.string "kind"
     t.integer "discount"
     t.string "reference"
-    t.string "photos"
     t.integer "code_supplier"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "avatar"
   end
 
   create_table "sale_details", force: :cascade do |t|
@@ -131,7 +115,12 @@ ActiveRecord::Schema.define(version: 2021_09_30_192021) do
 
   create_table "suppliers", force: :cascade do |t|
     t.integer "code_supplier"
+    t.integer "id_person"
+    t.integer "nit_company"
     t.string "name"
+    t.string "last_name"
+    t.string "kind"
+    t.string "sex"
     t.string "email"
     t.integer "telephone"
     t.string "address"
@@ -143,7 +132,6 @@ ActiveRecord::Schema.define(version: 2021_09_30_192021) do
     t.string "name"
     t.string "last_name"
     t.integer "telephone"
-    t.string "photo"
     t.string "sex"
     t.string "address"
     t.date "birth_date"

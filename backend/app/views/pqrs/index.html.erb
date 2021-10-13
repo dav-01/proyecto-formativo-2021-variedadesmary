@@ -1,0 +1,32 @@
+
+
+<h1>PQR</h1>
+
+<table class="table table-dark table-striped">
+  <tr>
+    <thead class="table-dark">
+      <th scope="col">Tipo</th>
+      <th scope="col">Descripcion</th>
+      <th scope="col">Estado</th>
+      <th scope="col">Referencia</th>
+      <th scope="col">Accion</th>
+    </thead>
+  </tr>
+
+<% @pqrs.each do |pqr| %>
+<tr>
+  <td><%= pqr.kind %></td>
+  <td><%= pqr.description %></td>
+  <td><%= pqr.state %></td>
+  <td><%= pqr.reference %></td>
+  <td>
+    <%= link_to "Editar", edit_pqr_path(pqr)%>
+    <%= link_to "Eliminar", pqr , method: :delete, data: {confirm: "Desea eliminar este producto?"} %>
+  </td>
+
+</tr>
+<% end %>
+</table>
+
+
+ <%= link_to "Crear nuevo Pqr", new_pqr_path %>

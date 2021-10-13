@@ -10,7 +10,6 @@ one:
   kind: MyString
   discount: 1
   reference: MyString
-  photos: MyString
   code_supplier: 1
 
 two:
@@ -23,5 +22,4 @@ two:
   kind: MyString
   discount: 1
   reference: MyString
-  photos: MyString
   code_supplier: 1

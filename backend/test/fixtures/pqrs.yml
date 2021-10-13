@@ -3,17 +3,21 @@
 one:
   code_pqr: 1
   code_customer: 1
+  code_sale: MyString
   kind: MyString
   description: MyString
   state: MyString
   reference: MyString
-  date: 2021-09-15
+  date: 2021-10-12
+  code_kind: MyString
 
 two:
   code_pqr: 1
   code_customer: 1
+  code_sale: MyString
   kind: MyString
   description: MyString
   state: MyString
   reference: MyString
-  date: 2021-09-15
+  date: 2021-10-12
+  code_kind: MyString
