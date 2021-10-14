@@ -3,9 +3,9 @@
 <div class="flex-container">
   <% @products.each do |product| %>
   <div class="flex-item">
-    <%# <%= image_tag(product.avatar_url, :class => 'imagen_producto') if product.avatar? %>
+    <%= image_tag(product.photo_url, :class => 'imagen_producto') if product.photo? %>
     <h3><%=product.name %></h3>
-    <p>Precio: <%= product.price%></p>
+    <p>$<%= product.price%></p>
 
     <button type="button" name="button">Comprar</button>
   </div>

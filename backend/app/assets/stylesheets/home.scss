@@ -11,7 +11,7 @@
 
 .flex-container{
   margin-top: 20px;
-  height: 300px;
+  height: 400px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
@@ -24,7 +24,7 @@
 .flex-item{
   border: solid 1px;
   text-align: center;
-  height: 550px;
+  height: 400px;
   margin: 15px;
   padding: 5px;
 
@@ -32,7 +32,7 @@
 
 }
  .imagen_producto{
-   height: 80%;
+   height: 70%;
    width: 100%;
  }
 
