@@ -1,3 +1,8 @@
 
 
-<%= image_tag(@supplier.photo_url, :class => 'imagen_show') if @supplier.photo? %>
+  <article class="articulo_producto">
+    <%= image_tag(@supplier.photo_url, :class => 'imagen_producto_show') if @supplier.photo? %>
+  </article>
+  <aside class="articulo_informacion">
+    <%= @supplier.name %>
+  </aside>

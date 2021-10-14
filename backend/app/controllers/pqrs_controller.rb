@@ -1,5 +1,7 @@
 class PqrsController < ApplicationController
 
+  before_action :authenticate_user!, except: [:new, :edit]
+
   def index
     @pqrs = Pqr.all
   end

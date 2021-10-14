@@ -1,0 +1,7 @@
+
+<article class="articulo_producto">
+  <%= image_tag(@product.photo_url, :class => 'imagen_producto_show') if @product.photo? %>
+</article>
+<aside class="articulo_informacion">
+  <%= @product.name %>
+</aside>

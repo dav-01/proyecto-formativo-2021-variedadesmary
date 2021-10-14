@@ -1,24 +1,7 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-
-.articulo{
-  border: solid 1px green;
-  height: 49.6%;
-  width: 24.7%;
-  background: blue;
-}
 
 .flex-container{
-  margin-top: 20px;
-  height: 400px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  // display: flex;
-  // flex-wrap: wrap;
-  // gap: 20px;
-
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .flex-item{
@@ -28,11 +11,9 @@
   margin: 15px;
   padding: 5px;
 
-  // width: calc(33.33% - 20px);
-
 }
  .imagen_producto{
-   height: 70%;
+   height: 73%;
    width: 100%;
  }
 

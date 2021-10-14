@@ -6,8 +6,6 @@
     <%= image_tag(product.photo_url, :class => 'imagen_producto') if product.photo? %>
     <h3><%=product.name %></h3>
     <p>$<%= product.price%></p>
-
-    <button type="button" name="button">Comprar</button>
   </div>
   <% end %>
 </div>
