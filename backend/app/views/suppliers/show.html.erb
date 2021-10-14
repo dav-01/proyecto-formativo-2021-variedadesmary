@@ -1,7 +1,3 @@
 
-<% @supplier do |supplier| %>
 
-<%= image_tag(supplier.photo_url) if supplier.photo? %>
-
-<% end %>
-<% end %>
+<%= image_tag(@supplier.photo_url, :class => 'imagen_show') if @supplier.photo? %>
