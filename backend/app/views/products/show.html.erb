@@ -1,9 +1,15 @@
 
+  <div class="section_show">
+    <div class="div_fotos">
 
-<article class="articulo_producto">
-  <%= image_tag(@product.photo_url, :class => 'imagen_producto_show') if @product.photo? %>
-</article>
-<aside class="articulo_informacion">
-  <%= @product.name %>
+    </div>
+    <div class="div_foto">
+      <%= image_tag(@product.photo_url, :class => 'imagen_producto_show') if @product.photo? %>
+    </div>
+  </div>
+  <div class="div_show">
+    <h3><%= @product.name %></h3>
+    <h3>$ <%= @product.price %></h3>
+    <h3>Marca: <%= @product.mark %></h3>
 
-</aside>
+  </div>

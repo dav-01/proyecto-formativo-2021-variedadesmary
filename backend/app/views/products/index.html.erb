@@ -26,7 +26,7 @@
      <td><%= product.kind %></td>
      <td><%= product.discount %></td>
      <td><%= product.reference %></td>
-     <td><%= link_to "Ver foto", product %></td>
+     <td><%= link_to "Ver foto", product, :class => 'enlaces' %></td>
 
      <td>
        <%= link_to "Editar", edit_product_path(product)%>
@@ -37,4 +37,4 @@
    <% end %>
  </table>
 
- <%= link_to "Crear nuevo producto", new_product_path %>
+ <%= link_to "Crear nuevo producto", new_product_path, :class => 'enlaces' %>
