@@ -5,12 +5,63 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+
+    <span class="nav-bar" id="btnMenu"><i class="fas fa-bars"> Menu</i></span>
+    <nav class="main-nav">
+      <ul class="menu" id="menu">
+        <li class="menu__item"><a href="#" class="menu__link">Variedades Mary</a></li>
+        <li class="menu__item container-submenu">
+          <a href="#" class="menu__link submenu-btn">Productos</a>
+          <ul class="submenu">
+            <li class="menu__item">
+              <a class="menu__link" <%= link_to "Crear Producto", products_path%></a>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">Mostrar Productos</a></li>
+          </ul>
+        </li>
+        <li class="menu__item container-submenu">
+          <a href="#" class="menu__link submenu-btn">Proveedores</a>
+          <ul class="submenu">
+            <li class="menu__item"><a href="#" class="menu__link" >Crear Proveedor </a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Mostrar Proveedor</a></li>
+          </ul>
+        </li>
+        <li class="menu__item"><a href="#" class="menu__link">Pedidos</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">PQR</a></li>
+        <li class="menu__item container-submenu">
+          <a href="#" class="menu__link submenu-btn"><i class="fas fa-user"></i></a>
+          <ul class="submenu">
+            <li class="menu__item"><a href="#" class="menu__link">Iniciar Sesion</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Registrarse</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Cerrar Sesion</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+
+
+    <header>
+
+    </header>
+    <section>
+      <%= yield %>
+    </section>
+
+    <footer>
+
+      <%= javascript_pack_tag 'menu' %>
+
+
+
+
   </body>
 </html>
