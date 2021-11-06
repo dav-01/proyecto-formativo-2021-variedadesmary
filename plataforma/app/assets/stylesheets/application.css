@@ -17,9 +17,12 @@
 
 *{
   box-sizing: border-box;
+  margin: 0px;
+  margin-bottom: 0px !important;
+
 }
 body{
-  margin: 0;
+  margin: 0px;
 }
 
 .nav-bar{
@@ -37,7 +40,7 @@ body{
   margin: 0;
 }
 .menu{
-  background: #555;
+  background: #282c34;
   width: 100%;
   margin-left: -100%;
   transition: all 0.5s;
@@ -80,7 +83,7 @@ body{
   .submenu{
     position: absolute;
     top: 60px;
-    width: 175px;
+    width: 200px;
     overflow: visible;
     z-index: 1000;
     opacity: 0;

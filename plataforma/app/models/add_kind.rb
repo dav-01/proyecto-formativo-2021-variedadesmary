@@ -1,0 +1,2 @@
+class AddKind < ApplicationRecord
+end

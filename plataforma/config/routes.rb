@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+
   devise_for :users
   # get 'suppliers/index'
   # get 'suppliers/new'
@@ -16,4 +16,5 @@ Rails.application.routes.draw do
 
   resources :products
   resources :suppliers
+  resources :pqrs
 end
