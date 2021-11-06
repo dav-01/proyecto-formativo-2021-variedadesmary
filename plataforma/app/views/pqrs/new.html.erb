@@ -6,7 +6,7 @@
 
 <div class="form_suppliers">
   <%= simple_form_for @pqr do |f| %>
-    <%= f.association :kind, label_method: :kind%>
+    <%= f.input :kind_id, label: 'Tipo'%>
     <%= f.input :description, label: "Descripcion" %>
     <%= f.input :state, label: "Estado" %>
     <%= f.input :reference, label: "Referencia" %>

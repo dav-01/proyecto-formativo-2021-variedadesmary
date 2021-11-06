@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_05_185632) do
+ActiveRecord::Schema.define(version: 2021_11_06_042801) do
 
   create_table "categories", force: :cascade do |t|
     t.string "kind"
@@ -74,7 +74,7 @@ ActiveRecord::Schema.define(version: 2021_11_05_185632) do
     t.string "state"
     t.string "reference"
     t.date "date"
-    t.string "code_kind"
+    t.string "kind_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
