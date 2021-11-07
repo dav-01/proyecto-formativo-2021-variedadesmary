@@ -21,6 +21,47 @@ h1{
   color: white;
 }
 
+
+
+// show
+
+.section_show{
+  border: solid 1px;
+  height: 500px;
+  width: 50%;
+  display: float;
+  float: left;
+}
+.div_show{
+  border: solid 1px;
+  height: 500px;
+  width: 50%;
+  display: float;
+  float: right;;
+  padding-left: 15px;
+}
+.div_fotos{
+  border: solid 1px;
+  height: 100%;
+  width: 12%;
+  display: float;
+  float: left;
+}
+.div_foto{
+  border: solid 1px;
+  height: 100%;
+  width: 88%;
+  display: float;
+  float: right;
+}
+.imagen_producto_show{
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+}
+
+//
+
 @media(max-width: 1024px){
 
   .form_products{
