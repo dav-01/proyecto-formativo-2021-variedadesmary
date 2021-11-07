@@ -1,2 +1,22 @@
-<h1>Products#new</h1>
-<p>Find me in app/views/products/new.html.erb</p>
+
+
+<div class="form_products">
+  <h1>Crear nuevo producto</h1>
+  <%= simple_form_for @product, html: {multipart: true}  do |f| %>
+    <%= f.input :name, label: 'Nombre' %>
+    <%= f.input :price, label: 'Precio' %>
+    <%= f.input :description, label: 'Descripcion', as: :text %>
+    <%= f.input :characteristic, label: 'Caracteristica' %>
+    <%= f.input :mark, label: 'Marca' %>
+    <%= f.input :kind, label: 'Tipo' %>
+    <%= f.input :discount, label: 'Descuento' %>
+    <%= f.input :reference, label: 'Referencia' %>
+    <%= f.file_field :photos, multiple: true %>
+    <%= f.file_field :photos, multiple: true %>
+    <%= f.file_field :photos, multiple: true %>
+    <div class="boton_enviar">
+      <%= f.button :submit, "Crear producto", :class => 'texto_boton'%>
+    </div>
+
+  <% end %>
+</div>

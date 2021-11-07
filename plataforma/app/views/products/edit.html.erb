@@ -1,2 +1,25 @@
-<h1>Products#edit</h1>
-<p>Find me in app/views/products/edit.html.erb</p>
+
+
+
+<div class="form_products">
+  <h1>Actualizar producto</h1>
+  <%= simple_form_for @product  do |f| %>
+    <%= f.input :name, label: 'Nombre' %>
+    <%= f.input :price, label: 'Precio' %>
+    <%= f.input :description, label: 'Descripcion', as: :text %>
+    <%= f.input :characteristic, label: 'Caracteristica' %>
+    <%= f.input :mark, label: 'Marca' %>
+    <%= f.input :kind, label: 'Tipo' %>
+    <%= f.input :discount, label: 'Descuento' %>
+    <%= f.input :reference, label: 'Referencia' %>
+    <% @product.photos.each do |photos| %>
+    <%= hidden_field :user, :photos, multiple: true, value: photos.identifier %>
+    <% end %>
+    <%= f.file_field :photos, multiple: true %>
+    <%= f.file_field :photos, :multiple => true, name: "post_attachments[avatar][]" %>
+    <div class="boton_enviar">
+      <%= f.button :submit, "Crear producto", :class => 'texto_boton'%>
+    </div>
+
+  <% end %>
+</div>
