@@ -5,7 +5,7 @@
     <% @products.each do |product| %>
     <%= link_to product, :class => 'enlaces' do %>
     <div class="flex-item">
-      <%= image_tag(product.photos_urls[0], :class => 'imagen_producto_show') if product.photos? %>
+      <%= image_tag(product.photos_urls[0], :class => 'imagen_producto_index') if product.photos? %>
       <h3><%=product.name %></h3>
       <p>$<%= product.price%></p>
     </div>
