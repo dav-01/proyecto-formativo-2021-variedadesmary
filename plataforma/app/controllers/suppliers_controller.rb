@@ -1,7 +1,14 @@
 class SuppliersController < ApplicationController
 
+  before_action :authenticate_user!
+
   def index
+    if current_user.has_role? :admin
     @suppliers = Supplier.all
+    else
+    flash[:alert] = "No tiene acceso"
+    redirect_to root_path
+    end
   end
 
   def new
@@ -46,5 +53,5 @@ class SuppliersController < ApplicationController
   def supplier_params
     params.require(:supplier).permit(:code_suppliers, :id_person, :nit_company, :name, :last_name, :kind, :sex, :email, :telephone, :address, :photo)
   end
-  
+
 end
