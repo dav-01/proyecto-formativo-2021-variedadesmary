@@ -1,7 +1,14 @@
 class ProductsController < ApplicationController
 
+  before_action :authenticate_user!
+
   def index
+    if current_user.has_role? :admin
       @products = Product.all
+    else
+    flash[:alert] = "No tiene acceso"
+    redirect_to root_path
+  end
   end
 
   def new

@@ -20,6 +20,9 @@ h1{
 .texto_boton{
   color: white;
 }
+.texto_boton:hover{
+  color: blue;
+}
 
 @media(max-width: 1024px){
 

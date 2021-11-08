@@ -1,3 +1,65 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.flex-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.flex-item{
+  border: solid 1px;
+  text-align: center;
+  height: 400px;
+  margin: 15px;
+  padding: 5px;
+
+}
+ .imagen_producto{
+   height: 73%;
+   width: 100%;
+ }
+
+ .enlaces{
+   text-decoration: none;
+   color: #ADD8E6;
+ }
+ .titulo{
+   visibility: hidden;
+ }
+
+
+ @media (max-width: 1200px) {
+   .flex-container{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+
+   }
+
+ }
+
+ @media (max-width: 900px) {
+   .flex-container{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+   }
+   .flex-item{
+     height: 400px;
+   }
+   .imagen_producto{
+     height: 70%;
+   }
+ }
+
+
+ @media (max-width: 500px) {
+   .flex-container{
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+   }
+   .flex-item{
+     height: 400px;
+     margin: 0px 40px 0px 40px;
+   }
+   .imagen_producto{
+     height: 70%;
+     width: 90%;
+   }
+ }

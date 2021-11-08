@@ -14,6 +14,7 @@
   </head>
   <body>
 
+
     <span class="nav-bar" id="btnMenu"><i class="fas fa-bars"> Menu</i></span>
     <nav class="main-nav">
       <ul class="menu" id="menu">
@@ -28,12 +29,15 @@
           </ul>
         </li>
         <li class="menu__item container-submenu">
+
           <a href="#" class="menu__link submenu-btn">Proveedores</a>
+
           <ul class="submenu">
             <li class="menu__item"><a class="menu__link" <%= link_to "Crear Proveedores", new_supplier_path%> </a></li>
             <li class="menu__item"><a class="menu__link" <%= link_to "Mostrar Proveedores", suppliers_path%></a></li>
           </ul>
         </li>
+
         <li class="menu__item container-submenu">
           <a href="#" class="menu__link submenu-btn">PQR</a>
           <ul class="submenu">
