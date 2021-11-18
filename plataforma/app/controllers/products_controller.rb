@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
 
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:show]
 
   def index
     if current_user.has_role? :admin
@@ -26,6 +26,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+
   end
 
   def edit
