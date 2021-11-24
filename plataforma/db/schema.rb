@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_08_045941) do
+ActiveRecord::Schema.define(version: 2021_11_24_033738) do
 
   create_table "categories", force: :cascade do |t|
     t.string "kind"
@@ -74,7 +74,7 @@ ActiveRecord::Schema.define(version: 2021_11_08_045941) do
     t.string "state"
     t.string "reference"
     t.date "date"
-    t.string "kind_id"
+    t.integer "kind_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -132,8 +132,6 @@ ActiveRecord::Schema.define(version: 2021_11_08_045941) do
 
   create_table "suppliers", force: :cascade do |t|
     t.integer "code_supplier"
-    t.integer "id_person"
-    t.integer "nit_company"
     t.string "name"
     t.string "last_name"
     t.string "kind"
@@ -143,6 +141,7 @@ ActiveRecord::Schema.define(version: 2021_11_08_045941) do
     t.string "address"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "category_id"
   end
 
   create_table "users", force: :cascade do |t|

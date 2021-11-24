@@ -1,3 +1,3 @@
 class Kind < ApplicationRecord
-  has_many :pqr
+  has_many :pqrs
 end
