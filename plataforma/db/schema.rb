@@ -132,6 +132,8 @@ ActiveRecord::Schema.define(version: 2021_11_24_033738) do
 
   create_table "suppliers", force: :cascade do |t|
     t.integer "code_supplier"
+    t.integer "id_person"
+    t.integer "nit_company"
     t.string "name"
     t.string "last_name"
     t.string "kind"
