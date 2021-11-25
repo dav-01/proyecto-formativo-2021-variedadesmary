@@ -25,7 +25,20 @@
             <li class="menu__item">
               <a class="menu__link" <%= link_to "Crear Producto", new_product_path%></a>
             </li>
-            <li class="menu__item"><a class="menu__link" <%= link_to "Mostrar Producto", products_path%></a></li>
+            <li class="menu__item">
+              <a class="menu__link" <%= link_to "Mostrar Producto", products_path%></a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item container-submenu">
+          <a href="#" class="menu__link submenu-btn">Ventas</a>
+          <ul class="submenu">
+            <li class="menu__item">
+              <a class="menu__link" <%= link_to "Mostrar Ventas", sale_index_path%></a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" <%= link_to "Crear Venta", new_sale_path%></a>
+            </li>
           </ul>
         </li>
         <li class="menu__item container-submenu">

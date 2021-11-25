@@ -43,7 +43,7 @@ class PqrsController < ApplicationController
   private
 
   def pqr_params
-    params.require(:pqr).permit(:code_pqr, :code_customer, :code_sale, :kind, :description, :state, :reference, :date)
+    params.require(:pqr).permit(:code_pqr, :code_customer, :code_sale, :kind, :description, :state, :reference, :date, :kind_id)
   end
-  
+
 end
