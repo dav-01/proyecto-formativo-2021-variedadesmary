@@ -8,7 +8,7 @@
 
 
 # Usuario Administrador
-User.create(email: 'cabrerabuelvasd@gmail.com', password: '12345678')
+User.create(fullname: 'David Cabrera' ,email: 'cabrerabuelvasd@gmail.com', password: '12345678')
 
 # Tipos de PQR
 Kind.create(kind: 'Peticion')

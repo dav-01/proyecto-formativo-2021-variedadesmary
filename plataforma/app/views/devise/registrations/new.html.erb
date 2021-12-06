@@ -7,13 +7,28 @@
     <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field">
-      <%= f.label :name %><br />
-      <%= f.text_field :name, :autofocus => true %>
+      <%= f.label :'Nombre Completo' %><br />
+      <%= f.text_field :fullname, :autofocus => true %>
     </div>
 
     <div class="field">
-      <%= f.label :address %><br />
+      <%= f.label :'Celular' %><br />
+      <%= f.text_field :telephone, :autofocus => true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :'Sexo' %><br />
+      <%= f.select(:sex, ['Masculino', 'Femenino', 'Otro'])%>
+    </div>
+
+    <div class="field">
+      <%= f.label :'Direccion' %><br />
       <%= f.text_field :address, :autofocus => true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :'Fecha de nacimiento' %><br />
+      <%= f.date_field :birth_date, :autofocus => true %>
     </div>
 
     <div class="field">
