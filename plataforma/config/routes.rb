@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  # get 'categoria/index'
+  # get 'categoria/new'
   devise_for :users
   # get 'suppliers/index'
   # get 'suppliers/new'
@@ -18,4 +20,5 @@ Rails.application.routes.draw do
   resources :suppliers
   resources :pqrs
   resources :sale
+  resources :categoria
 end
