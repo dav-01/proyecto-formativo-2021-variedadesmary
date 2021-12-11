@@ -19,6 +19,7 @@ class HomeController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+    
   end
 
   def edit
@@ -45,5 +46,5 @@ class HomeController < ApplicationController
   def product_params
     params.require(:product).permit(:name, :price, :description, :characteristic, :mark, :kind, :discount, :reference, {photos: []})
   end
-  
+
 end

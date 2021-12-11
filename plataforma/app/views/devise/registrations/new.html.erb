@@ -1,29 +1,27 @@
+
 <div class="form_registro">
 
 
-  <h2>Registrarme</h2>
+  <h2>Registrarme</h2><br>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field">
-      <%= f.label :'Nombre Completo' %><br />
-      <%= f.text_field :fullname, :autofocus => true %>
+      <%= f.text_field :fullname, :autofocus => true, :placeholder => 'Nombre Completo' %>
     </div>
 
     <div class="field">
-      <%= f.label :'Celular' %><br />
-      <%= f.text_field :telephone, :autofocus => true %>
+      <%= f.text_field :telephone, :autofocus => true, :placeholder => 'Celular' %>
     </div>
 
     <div class="field">
-      <%= f.label :'Sexo' %><br />
+      <%= f.label :'Sexo:' %>
       <%= f.select(:sex, ['Masculino', 'Femenino', 'Otro'])%>
     </div>
 
     <div class="field">
-      <%= f.label :'Direccion' %><br />
-      <%= f.text_field :address, :autofocus => true %>
+      <%= f.text_field :address, :autofocus => true, :placeholder => 'Direccion' %>
     </div>
 
     <div class="field">
@@ -32,21 +30,16 @@
     </div>
 
     <div class="field">
-      <%= f.label :'Correo electronico'%><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => 'Correo Electronico' %>
     </div>
 
     <div class="field">
-      <%= f.label :'Contraseña' %>
-      <% if @minimum_password_length %>
-      <em>( Minimo <%= @minimum_password_length %> caracteres)</em>
-      <% end %><br />
-      <%= f.password_field :password, autocomplete: "new-password" %>
+      <%= f.password_field :password, autocomplete: "new-password", :placeholder => 'Contraseña (Minimo 6 caracteres)' %>
     </div>
 
     <div class="field">
       <%= f.label :'Confirmar contraseña' %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", :placeholder => 'Comfirmar contraseña' %>
     </div>
 
     <div class="actions">
