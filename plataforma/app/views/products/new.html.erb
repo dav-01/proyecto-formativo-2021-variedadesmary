@@ -7,6 +7,7 @@
     <%= f.input :price, label: 'Precio' %>
     <%= f.input :description, label: 'Descripcion', as: :text %>
     <%= f.input :characteristic, label: 'Caracteristica' %>
+    <%= f.association :supplier, label_method: :name%>
     <%= f.input :mark, label: 'Marca' %>
     <%= f.input :kind, label: 'Tipo' %>
     <%= f.input :discount, label: 'Descuento' %>
