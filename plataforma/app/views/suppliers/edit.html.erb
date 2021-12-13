@@ -7,8 +7,7 @@
 <div class="form_suppliers">
   <%= simple_form_for @supplier do |f| %>
   <%= f.association :category, label_method: :kind%>
-    <%= f.input :name, label: "Nombre" %>
-    <%= f.input :last_name, label: "Apellido" %>
+    <%= f.input :fullname, label: "Nombre Completo" %>
     <%= f.input :sex, label: "Sexo" %>
     <%= f.input :email, label: "Correo electronico" %>
     <%= f.input :telephone, label: "Telefono" %>

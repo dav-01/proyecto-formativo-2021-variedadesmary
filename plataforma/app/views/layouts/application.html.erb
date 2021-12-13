@@ -64,7 +64,7 @@
           <ul class="submenu">
 
             <% if  user_signed_in?%>
-              <li class="menu__item"><a class="menu__link" <%= link_to "Editar Usuario", edit_user_registration_path%></a></li>
+              <li class="menu__item"><a class="menu__link" <%= link_to "Editar Perfil", edit_user_registration_path%></a></li>
               <li class="menu__item"><a class="menu__link" <%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete %></a></li>
 
               <% elsif %>
