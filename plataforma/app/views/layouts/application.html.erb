@@ -62,10 +62,17 @@
         <li class="menu__item container-submenu">
           <a href="#" class="menu__link submenu-btn"><i class="fas fa-user"></i></a>
           <ul class="submenu">
-            <li class="menu__item"><a class="menu__link" <%= link_to "Iniciar Sesion", new_user_session_path%></a></li>
-            <li class="menu__item"><a class="menu__link" <%= link_to "Editar Usuario", edit_user_registration_path%></a></li>
-            <li class="menu__item"><a  class="menu__link" <%= link_to "Registrarme", new_user_registration_path %></a></li>
-            <li class="menu__item"><a class="menu__link" <%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete %></a></li>
+
+            <% if  user_signed_in?%>
+              <li class="menu__item"><a class="menu__link" <%= link_to "Editar Usuario", edit_user_registration_path%></a></li>
+              <li class="menu__item"><a class="menu__link" <%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete %></a></li>
+
+              <% elsif %>
+              <li class="menu__item"><a class="menu__link" <%= link_to "Iniciar Sesion", new_user_session_path%></a></li>
+              <li class="menu__item"><a  class="menu__link" <%= link_to "Registrarme", new_user_registration_path %></a></li>
+
+            <% end %>
+
           </ul>
         </li>
       </ul>

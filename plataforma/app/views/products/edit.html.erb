@@ -3,7 +3,7 @@
 
 <div class="form_products">
   <h1>Actualizar producto</h1>
-  <%= simple_form_for @product  do |f| %>
+  <%= simple_form_for @product, html: {multipart: true}  do |f| %>
     <%= f.input :name, label: 'Nombre' %>
     <%= f.input :price, label: 'Precio' %>
     <%= f.input :description, label: 'Descripcion', as: :text %>
@@ -12,13 +12,12 @@
     <%= f.input :kind, label: 'Tipo' %>
     <%= f.input :discount, label: 'Descuento' %>
     <%= f.input :reference, label: 'Referencia' %>
-    <% @product.photos.each do |photos| %>
-    <%= hidden_field :user, :photos, multiple: true, value: photos.identifier %>
-    <% end %>
+    <%= f.file_field :photos, multiple: true%>
     <%= f.file_field :photos, multiple: true %>
-    <%= f.file_field :photos, :multiple => true, name: "post_attachments[avatar][]" %>
-    <div class="boton_enviar">
-      <%= f.button :submit, "Crear producto", :class => 'texto_boton'%>
+    <%= f.file_field :photos, multiple: true %>
+    <br><br>
+    <div class="d-grid gap-2">
+      <%= f.button :submit, "Actualizar producto", :class => "btn btn-primary"%>
     </div>
 
   <% end %>

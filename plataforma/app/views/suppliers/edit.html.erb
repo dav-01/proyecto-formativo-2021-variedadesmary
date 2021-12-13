@@ -6,15 +6,15 @@
 
 <div class="form_suppliers">
   <%= simple_form_for @supplier do |f| %>
+  <%= f.association :category, label_method: :kind%>
     <%= f.input :name, label: "Nombre" %>
     <%= f.input :last_name, label: "Apellido" %>
-    <%= f.input :kind, label: "Tipo" %>
     <%= f.input :sex, label: "Sexo" %>
     <%= f.input :email, label: "Correo electronico" %>
     <%= f.input :telephone, label: "Telefono" %>
-    <%= f.input :address, label: "Direccion"%>
-    <div class="boton_enviar">
-      <%= f.button :submit, "Actualizar Proveedor", :class => 'texto_boton' %>
+    <%= f.input :address, label: "Direccion"%><br>
+    <div class="d-grid gap-2">
+      <%= f.button :submit, "Actualizar Proveedor", :class => "btn btn-primary"%>
     </div>
 
   <% end %>
