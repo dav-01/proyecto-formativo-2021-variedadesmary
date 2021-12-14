@@ -1,18 +1,14 @@
 
   <div class="form_inicio_sesion">
-    <h2>Iniciar Sesion</h2>
+    <h2>INICIAR SESION</h2><br>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field">
-        <i class="fas fa-envelope icon"></i>
-        <%= f.label :'Correo electronico' %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => 'Correo electronico', :class => 'input_registro' %>
       </div>
 
       <div class="field">
-        <i class="fas fa-key icon"></i>
-        <%= f.label :'Contraseña' %><br />
-        <%= f.password_field :password, autocomplete: "current-password" %>
+        <%= f.password_field :password, autocomplete: "current-password", :placeholder => 'Contraseña', :class => 'input_registro' %>
       </div>
 
       <% if devise_mapping.rememberable? %>
