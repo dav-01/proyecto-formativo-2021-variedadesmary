@@ -5,15 +5,15 @@
 <div class="form_suppliers">
   <h1>Nuevo Proveedor</h1>
   <%= simple_form_for @supplier do |f| %>
-    <%= f.input :name, label: "Nombre" %>
-    <%= f.input :last_name, label: "Apellido" %>
-    <%= f.input :kind, label: "Tipo" %>
-    <%= f.input :sex, label: "Sexo" %>
+    <%= f.association :category, label_method: :kind%>
+    <%= f.input :fullname, label: "Nombre Completo" %>
+    <%= f.label :'Sexo:' %><br>
+    <%= f.select(:sex, ['Masculino', 'Femenino', 'Otro'])%>
     <%= f.input :email, label: "Correo electronico" %>
     <%= f.input :telephone, label: "Telefono" %>
-    <%= f.input :address, label: "Direccion"%>
-    <div class="boton_enviar">
-      <%= f.button :submit, "Crear Proveedor", :class => 'texto_boton'%>
+    <%= f.input :address, label: "Direccion"%> <br>
+    <div class="d-grid gap-2">
+      <%= f.button :submit, "Crear Proveedor", :class => "btn btn-primary"%>
     </div>
 
   <% end %>

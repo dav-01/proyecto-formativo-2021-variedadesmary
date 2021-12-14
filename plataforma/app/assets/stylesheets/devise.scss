@@ -3,10 +3,10 @@
 
 .form_inicio_sesion{
   border: solid 1px;
-  width: 300px;
+  width: 360px;
   margin: auto;
   margin-top: 20%;
-  background: #282c34;
+  background: #397fb7;
   border-radius: 10px;
   padding: 20px;
   color: white;
@@ -14,10 +14,10 @@
 }
 .form_registro{
   border: solid 1px;
-  width: 300px;
+  width: 400px;
   margin: auto;
-  margin-top: 20%;
-  background: #282c34;
+  margin-top: 5%;
+  background: #397fb7;
   border-radius: 10px;
   padding: 20px;
   color: white;
@@ -30,4 +30,21 @@
 
 .enlaces_devise{
   text-decoration: none;
+  color: white;
+}
+.field{
+  padding-bottom: 10px;
+}
+
+.input_registro{
+  height: 40px;
+  width: 320px;
+}
+.input_registro_nacimiento{
+  height: 40px;
+  width: 160px
+}
+.input_sexo{
+  text-align: left;
+  padding-left: 20px;
 }

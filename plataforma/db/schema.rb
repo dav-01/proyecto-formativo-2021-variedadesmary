@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_24_033738) do
+ActiveRecord::Schema.define(version: 2021_12_13_020208) do
+
+  create_table "categorias", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "categories", force: :cascade do |t|
     t.string "kind"
@@ -93,6 +100,7 @@ ActiveRecord::Schema.define(version: 2021_11_24_033738) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "photos"
+    t.integer "supplier_id"
   end
 
   create_table "roles", force: :cascade do |t|
@@ -132,8 +140,9 @@ ActiveRecord::Schema.define(version: 2021_11_24_033738) do
 
   create_table "suppliers", force: :cascade do |t|
     t.integer "code_supplier"
-    t.string "name"
-    t.string "last_name"
+    t.integer "id_person"
+    t.integer "nit_company"
+    t.string "fullname"
     t.string "kind"
     t.string "sex"
     t.string "email"
@@ -145,8 +154,7 @@ ActiveRecord::Schema.define(version: 2021_11_24_033738) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "last_name"
+    t.string "fullname"
     t.integer "telephone"
     t.string "sex"
     t.string "address"

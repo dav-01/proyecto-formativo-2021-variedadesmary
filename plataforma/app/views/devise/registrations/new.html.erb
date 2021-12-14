@@ -1,28 +1,44 @@
+
 <div class="form_registro">
 
 
-  <h2>Registrarme</h2>
+  <h2>REGISTRARME</h2><br>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
 
-
     <div class="field">
-      <%= f.label :'Correo electronico'%><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      <%= f.text_field :fullname, :autofocus => true, :placeholder => 'Nombre Completo', :class => 'input_registro' %>
     </div>
 
     <div class="field">
-      <%= f.label :'Contraseña' %>
-      <% if @minimum_password_length %>
-      <em>( Minimo <%= @minimum_password_length %> caracteres)</em>
-      <% end %><br />
-      <%= f.password_field :password, autocomplete: "new-password" %>
+      <%= f.text_field :telephone, :autofocus => true, :placeholder => 'Celular', :class => 'input_registro' %>
+    </div>
+
+    <div class="field input_sexo">
+      <%= f.label :'Sexo:' %>
+      <%= f.select(:sex, ['Masculino', 'Femenino', 'Otro'])%>
     </div>
 
     <div class="field">
-      <%= f.label :'Confirmar contraseña' %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      <%= f.text_field :address, :autofocus => true, :placeholder => 'Direccion', :class => 'input_registro' %>
+    </div>
+
+    <div class="field">
+      <%= f.label :'Fecha de nacimiento:' %>
+      <%= f.date_field :birth_date, :autofocus => true, :class => 'input_registro_nacimiento' %>
+    </div>
+
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => 'Correo Electronico', :class => 'input_registro' %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "new-password", :placeholder => 'Contraseña (Minimo 6 caracteres)', :class => 'input_registro' %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", :placeholder => 'Comfirmar contraseña', :class => 'input_registro' %>
     </div>
 
     <div class="actions">

@@ -16,14 +16,14 @@
    </tr>
    <% @pqrs.each do |pqr| %>
    <tr>
-     <td><%= pqr.kind %></td>
+     <td><%= pqr.kind_id %></td>
      <td><%= pqr.description %></td>
      <td><%= pqr.state %></td>
      <td><%= pqr.reference %></td>
      <td><%= pqr.date %></td>
      <td>
-       <%= link_to "Editar", edit_pqr_path(pqr)%>
-       <%= link_to "Eliminar", pqr, method: :delete, data: {confirm: "Desea eliminar este proveedor?"} %>
+       <%= link_to "Editar", edit_pqr_path(pqr), :class => "btn btn-primary"%>
+       <%= link_to "Eliminar", pqr, method: :delete, data: {confirm: "Desea eliminar este proveedor?"}, :class => "btn btn-danger" %>
      </td>
    </tr>
    <% end %>

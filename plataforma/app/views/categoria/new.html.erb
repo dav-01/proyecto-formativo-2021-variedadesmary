@@ -1,0 +1,17 @@
+
+
+
+<h1>Nueva Categoria</h1>
+
+
+<div class="form_suppliers">
+  <%= simple_form_for @categoria do |f| %>
+  <%= f.input :name, label: "Nombre" %>
+    <%= f.input :description, label: "Descripcion" %>
+
+    <div class="d-grid gap-2">
+      <%= f.button :submit, "Crear Categoria", :class => "btn btn-dark"%>
+    </div>
+
+  <% end %>
+</div>

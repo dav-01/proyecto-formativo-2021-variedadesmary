@@ -6,9 +6,9 @@
 <table class="table table-striped table-hover">
   <tr>
     <thead class="">
+      <th scope="col">Tipo</th>
       <th scope="col">Nombre</th>
       <th scope="col">Apellido</th>
-      <th scope="col">Tipo</th>
       <th scope="col">Sexo</th>
       <th scope="col">Correo electronico</th>
       <th scope="col">Telefono</th>
@@ -19,16 +19,15 @@
 
 <% @suppliers.each do |supplier| %>
 <tr>
-  <td><%= supplier.name %></td>
-  <td><%= supplier.last_name %></td>
-  <td><%= supplier.kind %></td>
+  <td><%= supplier.category_id %></td>
+  <td><%= supplier.fullname %></td>
   <td><%= supplier.sex %></td>
   <td><%= supplier.email %></td>
   <td><%= supplier.telephone %></td>
   <td><%= supplier.address %></td>
   <td>
-    <%= link_to "Editar", edit_supplier_path(supplier)%>
-    <%= link_to "Eliminar", supplier, method: :delete, data: {confirm: "Desea eliminar este proveedor?"} %>
+    <%= link_to "Editar", edit_supplier_path(supplier), :class => "btn btn-primary"%>
+    <%= link_to "Eliminar", supplier, method: :delete, data: {confirm: "Desea eliminar este proveedor?"}, :class => "btn btn-danger" %>
   </td>
 
 </tr>

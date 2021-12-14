@@ -9,6 +9,7 @@
        <th scope="col">Precio</th>
        <th scope="col">Descripcion</th>
        <th scope="col">Caracteristica</th>
+       <th scope="col">Proveedor</th>
        <th scope="col">Marca</th>
        <th scope="col">Tipo</th>
        <th scope="col">Descuento</th>
@@ -23,15 +24,16 @@
      <td><%= product.price %></td>
      <td><%= product.description %></td>
      <td><%= product.characteristic %></td>
+     <td><%= product.supplier_id %></td>
      <td><%= product.mark %></td>
      <td><%= product.kind %></td>
      <td><%= product.discount %></td>
      <td><%= product.reference %></td>
-     <td><%= link_to "Ver foto", product, :class => 'enlaces' %></td>
+     <td><%= link_to "Ver foto", product, :class => "btn btn-info" %></td>
 
      <td>
-       <%= link_to "Editar", edit_product_path(product)%>
-       <%= link_to "Eliminar", product, method: :delete, data: {confirm: "Desea eliminar este producto?"} %>
+       <%= link_to "Editar", edit_product_path(product), :class => "btn btn-primary"%>
+       <%= link_to "Eliminar", product, method: :delete, data: {confirm: "Desea eliminar este producto?"}, :class => "btn btn-danger" %>
 
      </td>
    </tr>

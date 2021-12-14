@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+# Usuario Administrador
+User.create(fullname: 'David Cabrera' ,email: 'cabrerabuelvasd@gmail.com', password: '12345678')
+
+# Tipos de PQR
+Kind.create(kind: 'Peticion')
+Kind.create(kind: 'Queja')
+Kind.create(kind: 'Reclamo')
+
+# Tipos de proveedores
+Category.create(kind: 'Persona')
+Category.create(kind: 'Empresa')
